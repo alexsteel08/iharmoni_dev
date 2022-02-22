@@ -1,0 +1,116 @@
+.team {
+    position: relative;
+    padding: 50px 0;
+    box-shadow: 0px -40px 70px 40px #f5f4ee, 0px 40px 70px 40px #fff;
+}
+
+.team_block {
+    position: relative;
+    z-index: 2;
+}
+.team_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding-right: 53px
+}
+.team_title {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1E3753;
+    position: relative;
+}
+
+.team_text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E3753;
+    margin: 24px 0px;
+    max-width: 380px;
+}
+.team_image {
+    position: relative;
+}
+.team_image img {
+    position: relative;
+    max-width: 526px;
+    height: 100%;
+}
+.team_image:before {
+    position: absolute;
+    content: '';
+    top: 75px;
+    right: -53px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 325px;
+    background-color: #890600;
+}
+
+.team_bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.team_bottom_item {
+    max-width: 480px;
+}
+.team_bottom_title {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 140%;
+    color: #008FF8;
+    margin: 8px 0px;
+}
+.team_bottom_text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #2C2D2E;
+    margin: 8px 0px;
+}
+
+@media only screen and (min-width: 810px) and (orientation: portrait) {
+    .team_text {
+        margin: 60px 0px 0;
+        max-width: inherit;
+    }
+    .team_bottom_item {
+        max-width: 375px;
+    }
+}
+@media only screen and (max-width: 576px) {
+    .team_title {
+        margin-bottom: 32px;
+        font-size: 32px;
+    }
+
+    .team_image img {
+        position: relative;
+        max-width: 312px;
+    }
+    .team_image:before {
+        width: 95%;
+        height: 200px;
+        right: 0;
+    }
+    .team_top {
+        padding-right: 0px;
+    }
+    .team_text {
+        margin: 50px 0px 0;
+        max-width: 100%;
+    }
+}

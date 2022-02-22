@@ -1,0 +1,185 @@
+.tech {
+    position: relative;
+    padding: 100px 0 100px;
+    box-shadow: 0px -40px 70px 40px #fefefd;
+}
+.tech:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 600px;
+    background-image: url(/wp-content/uploads/2022/02/Ellipse-95_1-min.png);
+}
+.tech_block {
+    position: relative;
+    z-index: 2;
+}
+.tech_top {
+    display: flex;
+    justify-content: space-between;
+}
+.tech_title {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 130%;
+    text-transform: uppercase;
+    color: #1E3753;
+    position: relative;
+}
+.tech_text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E3753;
+    margin: 24px 0px;
+    max-width: 380px;
+}
+.tech_image {
+    position: relative;
+}
+.tech_image img {
+
+}
+
+
+
+
+.tech_bottom {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.tech_bottom:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 350px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(/wp-content/uploads/2022/02/jet.png);
+}
+.tech_bottom_first {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 2;
+}
+.image_section_2 {
+    position: relative;
+    z-index: 2;
+}
+.title_section_2 {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #1E3753;
+    margin: 4px 0px;
+}
+.subtitle_section_2 {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    margin: 4px 0px;
+    color: #008FF8;
+}
+.text_section_2 {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E3753;
+    margin: 24px 0px;
+}
+
+
+.tech_cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+.tech_card {
+    flex: 0 0 25%;
+    padding: 0 12px;
+}
+.tech_card_title {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    color: #008FF8;
+    margin: 16px 0px;
+}
+.tech_card_text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 160%;
+    color: #1E3753;
+    margin: 16px 0px;
+}
+
+
+@media only screen and (min-width: 810px) and (orientation: portrait) {
+    .tech_text {
+        margin: 60px 0px 60px;
+        max-width: inherit
+    }
+    .tech_bottom_first {
+        margin-top: 350px;
+    }
+    .tech_card {
+        flex: 0 0 50%;
+    }
+
+}
+@media only screen and (max-width: 576px) {
+    .tech_image img {
+        width: 100%;
+    }
+    .tech_title {
+        font-size: 32px;
+        margin-bottom: 32px;
+    }
+    .image_section_2 img {
+        width: 100%;
+    }
+    .tech_cards {
+        flex-direction: column;
+    }
+    .tech_bottom:before {
+        width: 100%;
+        height: 180px;
+    }
+    .tech_bottom_first {
+        margin-top: 250px;
+    }
+    .title_section_2 {
+        font-size: 32px;
+    }
+}

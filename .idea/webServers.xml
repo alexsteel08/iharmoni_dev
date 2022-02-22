@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="656892fa-86d6-4195-a24d-30c1a40eeab5" name="ftp" url="http://185.181.165.252">
+        <fileTransfer rootFolder="/public_html/iharmoni" host="185.181.165.252" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

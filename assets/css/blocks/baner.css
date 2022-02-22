@@ -1,0 +1,250 @@
+.baner {
+    padding: 170px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.baner_block {
+    height: 75vh;
+    position: relative;
+}
+.baner_top:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 2px;
+    background-color: #FF0A00;
+}
+.baner_top:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2px;
+    height: 21px;
+    background-color: #FF0A00;
+}
+
+.baner_right:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2px;
+    height: 21px;
+    background-color: #FF0A00;
+}
+.baner_right:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 2px;
+    background-color: #FF0A00;
+}
+
+.baner_left:before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2px;
+    height: 21px;
+    background-color: #FF0A00;
+}
+.baner_left:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 2px;
+    background-color: #FF0A00;
+}
+
+
+.baner_bottom:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 2px;
+    height: 21px;
+    background-color: #FF0A00;
+}
+.baner_bottom:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 21px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 21px;
+    height: 2px;
+    background-color: #FF0A00;
+}
+
+.baner_content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.baner_fields {
+    max-width: 930px;
+}
+.baner_title {
+    font-family: Poster Gothic Round ATF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #1E3753;
+    margin-bottom: 40px;
+}
+.baner_text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #1E3753;
+    margin-bottom: 42px;
+    max-width: 560px;
+}
+.baner_subtitle {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1E3753;
+    margin-bottom: 50px;
+    display: flex;
+}
+.baner_subtitle span {
+    color: #FF0A00;
+}
+.baner_button a {
+    padding: 16px 32px;
+    background: #1E3753;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 40%);
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #FFFFFF;
+    width: auto;
+    height: 60px;
+}
+
+.second_button {
+    position: absolute;
+    bottom: 31px;
+    right: 31px;
+    z-index: 1;
+}
+.second_button a {
+    background: rgba(30, 55, 83, 0.1);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 90%;
+    text-align: center;
+    color: #1E3753;
+    padding: 16px 42px;
+}
+.days-block {
+    display: flex;
+}
+#timer {
+    margin-left: 10px;
+    color: #FF0A00;
+}
+@media only screen and (max-width: 576px) {
+    .baner_title {
+        font-size: 32px;
+        line-height: 110%;
+    }
+    .baner_text {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 140%;
+    }
+    .baner_subtitle {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 130%;
+    }
+    .baner_block {
+        height: 100%;
+        position: relative;
+        padding: 85px 2rem;
+    }
+
+
+    .baner_top:before {
+        right: 10px;
+    }
+    .baner_top:after {
+        right: 10px;
+    }
+
+    .baner_right:before {
+        right: 10px;
+    }
+    .baner_right:after {
+        right: 10px;
+    }
+
+    .baner_left:before {
+        left: 10px;
+    }
+    .baner_left:after {
+        left: 10px;
+    }
+
+
+    .baner_bottom:before {
+        left: 10px;
+    }
+    .baner_bottom:after {
+        left: 10px;
+    }
+    .baner_subtitle {
+        display: flex;
+        flex-direction: column;
+    }
+    #timer {
+        margin-left: 0px;
+    }
+}
