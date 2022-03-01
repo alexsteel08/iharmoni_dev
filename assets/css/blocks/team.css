@@ -113,4 +113,10 @@
         margin: 50px 0px 0;
         max-width: 100%;
     }
+    .team_image:before {
+        top: 40px;
+    }
+    .page-id-13 .team_image:before {
+        top: 10px;
+    }
 }

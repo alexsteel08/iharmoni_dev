@@ -91,6 +91,8 @@
     width: 2px;
     height: 21px;
     background-color: #FF0A00;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
+    filter: drop-shadow(0px 20px 40px rgba(30, 55, 83, 0.2));
 }
 .baner_v2_bottom:after {
     position: absolute;
@@ -102,6 +104,8 @@
     width: 21px;
     height: 2px;
     background-color: #FF0A00;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
+    filter: drop-shadow(0px 20px 40px rgba(30, 55, 83, 0.2));
 }
 
 .baner_v2_content {
@@ -141,7 +145,35 @@
     top: 50%;
     transform: translate(0%, -50%);
 }
-
+@media only screen and (max-width: 1366px) {
+    .baner_v2_text {
+        max-width: 550px;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .baner_v2_image img {
+        width: 430px;
+    }
+    .baner_v2_text {
+        max-width: 470px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .baner_v2 {
+        flex-direction: column-reverse;
+        display: flex;
+        align-items: center;
+    }
+    .baner_v2_image {
+        position: relative;
+        right: 0;
+        top: 50%;
+        transform: translate(0%, 0);
+    }
+    .baner_v2_text {
+        max-width: fit-content;
+    }
+}
 @media only screen and (max-width: 1080px) and (orientation: landscape) {
     .baner_v2_text {
         max-width: 520px;
@@ -184,6 +216,10 @@
     .baner_v2_text {
         padding-left: 1rem;
         padding-right: 1rem;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
     }
     .baner_v2_title {
         font-size: 32px;

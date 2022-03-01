@@ -45,7 +45,7 @@
     align-items: center;
 }
 .tabs_v2_list-item {
-    margin-bottom: 48px;
+    margin-bottom: 20px;
 }
 .tabs_v2_list-item:last-child {
     margin-bottom: 0px;
@@ -65,12 +65,12 @@
 .tabs_v2_list-title span {
     font-family: Poster Gothic ATF;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.07em;
     color: #1E3753;
-    margin: 16px 0px;
+    /*margin: 16px 0px;*/
     opacity: 1;
 }
 .tabs_v2_list-text {
@@ -82,7 +82,7 @@
     color: #1E3753;
     opacity: 0.64;
     margin: 16px 0px;
-    padding-left: 38px;
+    padding-left: 41px;
 }
 .tabs_v2_img {
     position: relative;
@@ -98,7 +98,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: 606px;
-    height: 779px;
+    height: 810px;
     background: #890600;
     z-index: 0;
 }
@@ -274,7 +274,37 @@
 
 /**/
 
-
+@media only screen and (max-width: 1366px) {
+    .image_big img {
+        max-width: 550px;
+    }
+    .tabs_v2_img:before {
+        width: 530px;
+        height: 810px;
+    }
+}
+@media only screen and (max-width: 1150px) {
+    .image_big img {
+        max-width: 460px;
+    }
+    .tabs_v2_img:before {
+        width: 470px;
+    }
+}
+@media only screen and (max-width: 1050px) {
+    .image_big img {
+        max-width: 400px;
+    }
+    .tabs_v2_img:before {
+        width: 400px;
+    }
+    .tabs_v2_img:after {
+        width: 350px;
+    }
+    .image_small {
+        right: 40px;
+    }
+}
 @media only screen and (max-width: 1024px) {
     .tabs_v2_img:before {
         max-width: 450px;
@@ -308,7 +338,7 @@
 }
 @media only screen and (max-width: 576px) {
     .tabs_v2 {
-        padding: 70px 0 70px;
+        padding: 20px 0 20px;
     }
     .tabs_v2_title {
         font-size: 22px;
@@ -339,5 +369,14 @@
     .image_big img {
         max-width: -webkit-fill-available;
         width: 100%;
+    }
+    .tabs_v2_list-num {
+        font-size: 18px;
+    }
+    .tabs_v2_list-title span {
+        font-size: 18px;
+    }
+    .tabs_v2_list-text {
+        padding-left: 35px;
     }
 }

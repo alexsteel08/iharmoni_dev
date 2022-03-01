@@ -7,12 +7,12 @@
     <div class="why_starport_block content_width">
         <div class="why_starport_content">
             <?php if( get_sub_field('why_starport_title') ): ?>
-               <div class="why_starport_title" data-aos="fade-up" >
+               <div class="why_starport_title" data-aos="fade-up" data-aos-once="true">
                   <?php the_sub_field('why_starport_title'); ?>
                </div>
             <?php endif; ?>
             <?php if( have_rows('cards') ): ?>
-                <div class="cards" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
+                <div class="cards" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
                     <?php while( have_rows('cards') ): the_row(); ?>
                         <div class="card">
                             <div class="card_title"><?php the_sub_field('title'); ?></div>

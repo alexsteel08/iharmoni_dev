@@ -3,7 +3,7 @@
         <div class="um_content">
             <div class="um_top">
                 <?php if( get_sub_field('um_title') && get_sub_field('um_text') ): ?>
-                    <div class="um_title_text" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0">
+                    <div class="um_title_text" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
                         <div class="um_title">
                             <?php the_sub_field('um_title'); ?>
                         </div>
@@ -13,7 +13,7 @@
                     </div>
                 <?php endif; ?>
                 <?php if( get_sub_field('um_image') ): ?>
-                    <div class="um_image" data-da="um_title_text,1,992"  data-aos="fade-left" data-aos-delay="200" data-aos-offset="0">
+                    <div class="um_image" data-da="um_title_text,1,992"  data-aos="fade-left" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
                         <img src="<?php the_sub_field('um_image'); ?>" alt="img">
                     </div>
                 <?php endif; ?>
@@ -21,7 +21,7 @@
 
 
             <?php if( have_rows('um_cards') ): ?>
-                <div class="um_cards"  data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+                <div class="um_cards"  data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-once="true">
                     <?php while( have_rows('um_cards') ): the_row(); ?>
                         <div class="um_card">
                             <div class="um_card_title"><?php the_sub_field('title'); ?></div>

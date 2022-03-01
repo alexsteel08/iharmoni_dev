@@ -193,9 +193,12 @@
         margin-right: 10px;
     }
     .list_diagram_list {
-        padding: 50px 0 30px 17px;
+        padding: 0px 0 30px 17px;
     }
     .list_section {
         padding-left: 30px;
+    }
+    .list_diagram_img img {
+        margin-top: 20px;
     }
 }

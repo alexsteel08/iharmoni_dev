@@ -38,6 +38,7 @@
     position: relative;
     z-index: 4;
     height: 100%;
+    filter: drop-shadow(0px 20px 40px rgba(30, 55, 83, 0.2));
 }
 .cta_tabs_title {
     font-family: Poster Gothic ATF;
@@ -101,6 +102,7 @@
 .cta_square_image {
     position: relative;
     z-index: 2;
+    filter: drop-shadow(0px 20px 40px rgba(30, 55, 83, 0.2));
 }
 .cta_square_image:before {
     position: absolute;
@@ -177,6 +179,8 @@
     width: 100%;
     height: 592px;
     background: #890600;
+    filter: drop-shadow(0px 20px 40px rgba(30, 55, 83, 0.2));
+    box-shadow: 0px 20px 40px rgba(30, 55, 83, 0.2);
 }
 .cta_form_item {
     padding: 0 12px;
@@ -292,7 +296,7 @@
 .accordion__caption {
     font-family: Poster Gothic ATF;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 22px;
     line-height: 150%;
     color: #008FF8;
@@ -638,7 +642,10 @@
             transform: translate(50%, -50%);
         }
         .cta_forms_items {
-            flex-direction: column;
+            overflow-x: auto;
+        }
+        .cta_forms_items::-webkit-scrollbar {
+            width: 0;
         }
         .cta_form_item {
             margin-bottom: 30px;
@@ -710,6 +717,14 @@
     }
     #wpcf7-f117-o2 > form > p:nth-child(4) > input, #wpcf7-f9-o1 > form > p:nth-child(4) > input {
         font-size: 22px;
+    }
+    .cta_tabs {
+        min-height: 790px;
+        padding: 48px 24px 5px;
+    }
+
+    .cta_form_item {
+        flex: 0 0 93%;
     }
 
 }

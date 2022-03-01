@@ -3,7 +3,7 @@
         <div class="team_content">
             <div class="team_top">
                 <?php if (get_sub_field('team_title') && get_sub_field('team_title')): ?>
-                    <div class="team_top_left" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
+                    <div class="team_top_left" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
                         <div class="team_title">
                             <?php the_sub_field('team_title'); ?> <img src="/wp-content/uploads/2022/02/stars.svg" alt="img">
                         </div>
@@ -14,13 +14,13 @@
 
                 <?php endif; ?>
                 <?php if (get_sub_field('team_image')): ?>
-                    <div class="team_image" data-da="team_top_left,1,992" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
+                    <div class="team_image" data-da="team_top_left,1,992" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
                         <img src="<?php the_sub_field('team_image'); ?>" alt="img">
                     </div>
                 <?php endif; ?>
             </div>
             <?php if( have_rows('team_crads') ): ?>
-                <div class="team_bottom" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+                <div class="team_bottom" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-once="true">
                     <?php while( have_rows('team_crads') ): the_row();  ?>
                         <div class="team_bottom_item">
                             <div class="team_bottom_title"><?php the_sub_field('title'); ?></div>

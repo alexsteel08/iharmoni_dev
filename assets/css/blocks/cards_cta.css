@@ -336,7 +336,7 @@
     }
     .cards_cta_top {
         left: 0;
-        padding: 16px;
+        padding: 40px 16px;
         z-index: 2;
     }
     .cards_cta_square_image img {
@@ -359,5 +359,10 @@
     }
     .cta_form_item {
         flex: 0 0 100%;
+    }
+    .cards_cta:before {
+        top: -100px;
+        height: 300px;
+        background-position: center center;
     }
 }

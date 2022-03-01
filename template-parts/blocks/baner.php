@@ -7,17 +7,17 @@
         <div class="baner_content">
             <div class="baner_fields">
                 <?php if( get_sub_field('baner_title') ): ?>
-                    <div class="baner_title" data-aos="fade-up" >
+                    <div class="baner_title" data-aos="fade-up" data-aos-once="true">
                         <?php the_sub_field('baner_title'); ?>
                     </div>
                 <?php endif; ?>
                 <?php if( get_sub_field('baner_text') ): ?>
-                    <div class="baner_text" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
+                    <div class="baner_text" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
                         <?php the_sub_field('baner_text'); ?>
                     </div>
                 <?php endif; ?>
                 <?php if( get_sub_field('baner_subtitle') ): ?>
-                    <div class="baner_subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
+                    <div class="baner_subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
                         <?php the_sub_field('baner_subtitle'); ?>
                         <div id="timer" class="timer col">
 
@@ -26,14 +26,14 @@
                 <?php endif; ?>
 
                 <?php if( get_sub_field('baner_button_link') && get_sub_field('baner_button_text') ): ?>
-                    <div class="baner_button" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+                    <div class="baner_button" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-once="true">
                         <a href="<?php the_sub_field('baner_button_link'); ?>" rel="nofollow"><?php the_sub_field('baner_button_text'); ?></a>
                     </div>
                 <?php endif; ?>
             </div>
 
             <?php if( get_sub_field('second_button_link') && get_sub_field('second_button_text') ): ?>
-                <div class="second_button" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
+                <div class="second_button" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" data-aos-once="true">
                     <a href="<?php the_sub_field('second_button_link'); ?>" rel="nofollow"><?php the_sub_field('second_button_text'); ?></a>
                 </div>
             <?php endif; ?>

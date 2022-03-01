@@ -40,6 +40,8 @@
     color: #1E3753;
     margin-bottom: 42px;
     max-width: 550px;
+    position: relative;
+    z-index: 1;
 }
 @media only screen and (min-width: 810px) and (orientation: portrait) {
     .hdwdi_text {
@@ -57,5 +59,11 @@
     .hdwdi {
         position: relative;
         padding: 70px 0 40px;
+    }
+    .hdwdi_text {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 160%;
     }
 }

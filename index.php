@@ -55,7 +55,7 @@ get_header(); ?>
                                         </a>
                                     </div>
                                     <div class="top_post_meta" data-aos="fade-left" data-aos-delay="200" data-aos-offset="0">
-                                        <div class="top_post_date">UPDATES <span></span> <?php echo get_the_date('F j, Y');?></div>
+                                        <div class="top_post_date"><?php echo get_the_date('F j, Y');?></div>
                                         <div class="top_post_title"><a href="<?php the_permalink(); ?>"><h2><?php the_title(); ?></h2></a></div>
                                         <div class="top_post_excerpt"><?php the_excerpt();?></div>
                                     </div>

@@ -190,19 +190,23 @@ body.admin-bar .navbar-fixed-top {
     .header__menu:after {
         display: none;
     }
+    .header__container {
+        min-height: 66px;
+    }
 }
 @media only screen and (max-width: 768px) {
     #mega-menu-primary-menu {
         height: 100vh;
     }
     #mega-menu-wrap-primary-menu .mega-menu-toggle + #mega-menu-primary-menu {
-        background-image: url(/wp-content/uploads/2022/02/Home_mob.jpg);
+        /*background-image: url(/wp-content/uploads/2022/02/Home_mob.jpg);*/
+        background-color: #F5F4EF;
         height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
     }
     #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item {
-        padding: 30px 0;
+        padding: 20px 0;
     }
     .cta_button_header {
         text-align: center;

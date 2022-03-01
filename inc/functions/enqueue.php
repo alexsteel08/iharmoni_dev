@@ -28,8 +28,8 @@ add_action('wp_enqueue_scripts', 'theme_front_end_styles');
 add_action('wp_enqueue_scripts', 'theme_front_end_script');
     function theme_front_end_script()
 {
-    wp_enqueue_script('locomotive-scroll', WTHEME_JS_URI . 'locomotive-scroll.min.js', array('jquery'), '', true);
-    wp_enqueue_script('rellax', WTHEME_JS_URI . 'rellax.min.js', array('jquery'), '', true);
+//    wp_enqueue_script('locomotive-scroll', WTHEME_JS_URI . 'locomotive-scroll.min.js', array('jquery'), '', true);
+//    wp_enqueue_script('rellax', WTHEME_JS_URI . 'rellax.min.js', array('jquery'), '', true);
 
     if(is_page_template('page-faq.php')):
         wp_enqueue_script('faq', WTHEME_JS_URI . 'faq.js', array('jquery'), '', true);

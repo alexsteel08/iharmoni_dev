@@ -417,25 +417,30 @@ jQuery(document).ready(function($){
 
 
 
-AOS.init();
-
-
-
-const scroller = new LocomotiveScroll({
-    el: document.querySelector('[data-scroll-container]'),
-    smooth: true
+AOS.init({
+    disable: function() {
+        var maxWidth = 800;
+        return window.innerWidth < maxWidth;
+    }
 });
 
 
 
-jQuery(document).ready(function($){
-    $(function(){
-        var rellax = new Rellax('.rellax', {
+// const scroller = new LocomotiveScroll({
+//     el: document.querySelector('[data-scroll-container]'),
+//     smooth: true
+// });
 
-        });
-    })
-});
 
+//
+// jQuery(document).ready(function($){
+//     $(function(){
+//         var rellax = new Rellax('.rellax', {
+//
+//         });
+//     })
+// });
+//
 
 
 

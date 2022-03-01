@@ -24,8 +24,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     width: calc(100% - 100px);
-    height: 500px;
+    height: 580px;
     background-color: #890600;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
+
 }
 .info_block_block {
     position: relative;
@@ -39,12 +41,14 @@
     background: #1E3753;
     padding: 48px 48px 48px 68px;
     max-width: 584px;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
+
 }
 .info_block_title,
 .info_block_subtitle {
     font-family: Poster Gothic ATF;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 32px;
     line-height: 140%;
     text-transform: uppercase;
@@ -56,7 +60,7 @@
 .info_block_item-title {
     font-family: Poster Gothic ATF;
     font-style: normal;
-    font-weight: bold;
+    font-weight: 500;
     font-size: 24px;
     line-height: 28px;
     letter-spacing: 0.07em;
@@ -71,13 +75,14 @@
     line-height: 160%;
     color: #FFFFFF;
     opacity: 0.64;
-    margin: 12px 0px;
+    margin: 16px 0px;
 }
 .info_block_img {
     margin-right: -30px;
     position: relative;
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 @media only screen and (min-width: 1441px) {
     .info_block_img {
@@ -129,7 +134,7 @@
 }
 @media only screen and (max-width: 576px) {
     .info_block {
-        padding: 110px 0 60px
+        padding: 50px 0 30px
     }
     .info_block_img img {
         max-width: 295px;

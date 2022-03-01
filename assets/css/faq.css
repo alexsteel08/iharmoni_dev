@@ -54,9 +54,9 @@
     padding: 0 1.4rem;
 }
 .accordion__caption {
-    font-family: Inter;
+    font-family: 'Poster Gothic Round ATF';
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 18px;
     line-height: 160%;
     color: #008FF8;
@@ -533,5 +533,62 @@
 }
 .subscribe_content {
     display: none;
+}
 
+
+@media only screen and (max-width: 576px) {
+    .cta_forms_title {
+        font-size: 32px;
+    }
+    .cards_cta:after {
+        width: 100%;
+    }
+    .cta_form_wrapper {
+        padding: 30px 20px;
+    }
+    .cta_form_title {
+        font-size: 22px;
+    }
+    .cta_forms_title-block:before {
+        top: -20px;
+        right: 50%;
+        transform: translate(50%, -50%);
+    }
+    .cta_forms_title-block:after {
+        bottom: -30px;
+        left: 50%;
+        top: inherit;
+        transform: translate(-50%, 0%);
+    }
+    .cards_cta_top {
+        left: 0;
+        padding: 40px 16px;
+        z-index: 2;
+    }
+    .cards_cta_square_image img {
+        width: 100%;
+    }
+    .cta_tabs_title {
+        font-size: 32px;
+        padding-left: 0px;
+    }
+    .cta_list_title {
+        position: relative;
+        padding-left: 40px;
+    }
+    .cta_list_title span {
+        position: absolute;
+        left: 0;
+    }
+    .cta_forms_block {
+        padding: 0px;
+    }
+    .cta_form_item {
+        flex: 0 0 100%;
+    }
+    .cards_cta:before {
+        top: -100px;
+        height: 300px;
+        background-position: center center;
+    }
 }

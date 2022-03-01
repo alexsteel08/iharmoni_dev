@@ -3,11 +3,11 @@
         <div class="tabs_v2_content">
             <div class="tabs_v2_tabs" >
                 <?php if( get_sub_field('tabs_v2_title') ): ?>
-                   <div class="tabs_v2_title" data-aos="fade-up" data-aos-offset="0">
+                   <div class="tabs_v2_title" data-aos="fade-up" data-aos-offset="0" data-aos-once="true">
                       <?php the_sub_field('tabs_v2_title'); ?>
                    </div>
                 <?php endif; ?>
-                <div class="tabs_wrapper"  data-aos="fade-right" data-aos-delay="200" data-aos-offset="0">
+                <div class="tabs_wrapper"  data-aos="fade-right" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
                     <?php if( have_rows('tabs_v2_tabs') ): ?>
                         <div class="container-tab">
                             <ul class="accordion-tabs_v2">
@@ -37,7 +37,7 @@
                     <?php endif; ?>
                 </div>
             </div>
-            <div class="tabs_v2_images" data-da="tabs_v2_tabs,1,567"  data-aos="fade-left" data-aos-delay="200" data-aos-offset="0">
+            <div class="tabs_v2_images" data-da="tabs_v2_tabs,1,567"  data-aos="fade-left" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
                 <div class="tabs_v2_img">
                     <?php if( get_sub_field('image_big') ): ?>
                         <div class="image_big">

@@ -7,12 +7,12 @@
         <div class="baner_v3_content">
             <div class="baner_v3_fields">
                 <?php if( get_sub_field('baner_title') ): ?>
-                    <div class="baner_v3_title" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
+                    <div class="baner_v3_title" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
                         <?php the_sub_field('baner_title'); ?>
                     </div>
                 <?php endif; ?>
                 <?php if( get_sub_field('baner_text') ): ?>
-                    <div class="baner_v3_text" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
+                    <div class="baner_v3_text" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
                         <?php the_sub_field('baner_text'); ?>
                     </div>
                 <?php endif; ?>

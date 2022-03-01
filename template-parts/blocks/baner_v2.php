@@ -5,7 +5,7 @@
         <div class="baner_v2_left"></div>
         <div class="baner_v2_bottom"></div>
         <div class="baner_v2_content">
-            <div class="baner_v2_fields" data-aos="fade-left" data-aos-delay="200" data-aos-offset="0">
+            <div class="baner_v2_fields" data-aos="fade-left" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
                 <?php if( get_sub_field('baner_title') ): ?>
                     <div class="baner_v2_title">
                         <?php the_sub_field('baner_title'); ?>
