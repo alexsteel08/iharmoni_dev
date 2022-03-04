@@ -78,10 +78,10 @@ get_header(); ?>
         </div>
     </div>
 </section>
-    <section class="cta" <?php if( get_field('cta_tabs_bi') ): ?> style="background-image: url(<?php the_field('cta_tabs_bi'); ?>)"<?php endif; ?>>
+    <section  class="cta" <?php if( get_field('cta_tabs_bi') ): ?> style="background-image: url(<?php the_field('cta_tabs_bi'); ?>)"<?php endif; ?>>
         <div class="cta_block content_width">
             <div class="cta_content">
-                <div class="cta_forms">
+                <div class="cta_forms" id="cta" >
                     <?php if( get_field('cta_forms_title') ): ?>
                         <div class="cta_forms_title-block" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                             <div class="cta_forms_title">

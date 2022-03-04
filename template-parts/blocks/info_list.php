@@ -3,12 +3,12 @@
     <div class="info_block_block">
         <div class="info_block_content">
             <?php if( get_sub_field('info_block_image') ): ?>
-               <div class="info_block_img" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
+               <div class="info_block_img" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0">
                    <img src="<?php the_sub_field('info_block_image'); ?>" alt="">
                </div>
             <?php endif; ?>
 
-            <div class="info_block_list" data-aos="fade-left" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
+            <div class="info_block_list" data-aos="fade-left" data-aos-delay="200" data-aos-offset="0">
                 <?php if( get_sub_field('info_block_title') ): ?>
                    <div class="info_block_title">
                       <?php the_sub_field('info_block_title'); ?>

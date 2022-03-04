@@ -1,4 +1,4 @@
-<section class="cta" <?php if( get_field('cta_tabs_bi','option') ): ?> style="background-image: url(<?php the_field('cta_tabs_bi','option'); ?>)"<?php endif; ?>>
+<section  class="cta" <?php if( get_field('cta_tabs_bi','option') ): ?> style="background-image: url(<?php the_field('cta_tabs_bi','option'); ?>)"<?php endif; ?>>
     <div class="cta_block content_width">
 
         <div class="subscribe">
@@ -21,7 +21,7 @@
         </div>
 
         <div class="cta_content">
-            <div class="cta_forms">
+            <div class="cta_forms" id="cta" >
                 <?php if( get_field('cta_forms_title','option') ): ?>
                     <div class="cta_forms_title-block">
                         <div class="cta_forms_title" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">

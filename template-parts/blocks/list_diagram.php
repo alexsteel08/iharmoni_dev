@@ -3,12 +3,12 @@
         <div class="list_diagram_content">
             <div class="list_diagram_titles">
                 <?php if( get_sub_field('list_diagram_title') ): ?>
-                   <div class="list_diagram_title" data-aos="fade-up" data-aos-offset="0" data-aos-once="true">
+                   <div class="list_diagram_title" data-aos="fade-up" data-aos-offset="0">
                       <?php the_sub_field('list_diagram_title'); ?>
                    </div>
                 <?php endif; ?>
                 <?php if( get_sub_field('list_diagram_subtitle') ): ?>
-                   <div class="list_diagram_subtitle" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
+                   <div class="list_diagram_subtitle" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                       <?php the_sub_field('list_diagram_subtitle'); ?>
                    </div>
                 <?php endif; ?>
@@ -18,7 +18,7 @@
                 <div class="list_diagram_line">
                     <div class="list_diagram_row">
                         <?php if( have_rows('list_items') ): ?>
-                            <div class="list_diagram_list" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
+                            <div class="list_diagram_list" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
                                 <?php while( have_rows('list_items') ): the_row();?>
                                     <div class="list_diagram_parrent">
                                         <div class="list_diagram_parrent-title">
@@ -42,8 +42,8 @@
 
 
                         <?php if( get_sub_field('list_diagram_image') ): ?>
-                            <div class="list_diagram_diagram" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-once="true">
-                                <div class="list_diagram_img" data-aos="fade-left" data-aos-delay="450" data-aos-offset="0" data-aos-once="true">
+                            <div class="list_diagram_diagram" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
+                                <div class="list_diagram_img" data-aos="fade-left" data-aos-delay="450" data-aos-offset="0">
                                     <img src="<?php the_sub_field('list_diagram_image'); ?>" alt="">
                                 </div>
                             </div>

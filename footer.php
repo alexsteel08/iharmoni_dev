@@ -3,36 +3,58 @@
         <div class="footer_rows">
             <div class="footer__column">
                 <div class="footer_column_content">
-                    <div class="footer_column_title">iHarmoni</div>
-                    <div class="footer_column_text">
-                        iHarmoni is a digital platform that powers mortgage brokers lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    <?php if( get_field('fc1_title','option') ): ?>
+                       <div class="footer_column_title">
+                          <?php the_field('fc1_title','option'); ?>
+                       </div>
+                    <?php endif; ?>
+                    <?php if( get_field('fc1_text','option') ): ?>
+                        <div class="footer_column_text">
+                            <?php the_field('fc1_text','option'); ?>
+                        </div>
+                    <?php endif; ?>
+                </div>
+            </div>
+            <?php if( have_rows('fc2_list','option') ): ?>
+                <div class="footer__column">
+                    <div class="footer_column_content">
+                        <ul class="footer_links">
+                            <?php while( have_rows('fc2_list','option') ): the_row(); ?>
+                                <li>
+                                    <a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('text'); ?></a>
+                                </li>
+                            <?php endwhile; ?>
+                        </ul>
                     </div>
                 </div>
-            </div>
-            <div class="footer__column">
-                <div class="footer_column_content">
-                    <ul class="footer_links">
-                        <li><a href="/brokers/">Brokers</a></li>
-                        <li><a href="/lenders/">Lenders</a></li>
-                        <li><a href="/faq/">FAQ</a></li>
-                    </ul>
+            <?php endif; ?>
+            <?php if( have_rows('fc3_list','option') ): ?>
+                <div class="footer__column">
+                    <div class="footer_column_content">
+                        <ul class="footer_links">
+                            <?php while( have_rows('fc3_list','option') ): the_row(); ?>
+                                <li>
+                                    <a href="<?php the_sub_field('link'); ?>"><?php the_sub_field('text'); ?></a>
+                                </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    </div>
                 </div>
-            </div>
+            <?php endif; ?>
             <div class="footer__column">
                 <div class="footer_column_content">
-                    <ul class="footer_links">
-                        <li><a href="/about-us/">About us</a></li>
-                        <li><a href="/insights/">Insights</a></li>
-                        <li><a href="/contact-us/">Contact us</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer__column">
-                <div class="footer_column_content">
-                    <div class="footer_contact_title">Contact</div>
+                    <?php if( get_field('fc4_title','option') ): ?>
+                        <div class="footer_contact_title">
+                            <?php the_field('fc4_title','option'); ?>
+                        </div>
+                    <?php endif; ?>
                     <ul class="footer_contacts">
-                        <li><a href="tel:+14442222223">+ 1444 222 22 23</a></li>
-                        <li><a href="mailto:suport@iharmonicre.com">suport@iharmonicre.com</a></li>
+                        <?php if( get_field('phone','option') ): $phone1=get_field('phone','option'); ?>
+                            <li><a href="tel:<?php  if($phone1) {echo preg_replace('/[^0-9]/', '', $phone1);}?>"><?php echo $phone1;?></a></li>
+                        <?php endif; ?>
+                        <?php if( get_field('email','option') ): ?>
+                            <li><a href="mailto:<?php the_field('email','option'); ?>"><?php the_field('email','option'); ?></a></li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>

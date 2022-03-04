@@ -1,4 +1,10 @@
 <section class="baner" <?php if( get_sub_field('baner_bi') ): ?> style="background-image: url(<?php the_sub_field('baner_bi'); ?>)"<?php endif; ?>>
+    <video autoplay muted id="myVideo">
+        <source src="<?php $file = get_sub_field('video_bg'); if( $file ): ?><?php echo $file['url']; ?><?php endif; ?>">
+    </video>
+<!--    <div class="video_content">-->
+<!--        <button id="myBtn" onclick="myFunction()">Pause</button>-->
+<!--    </div>-->
     <div class="baner_block content_width">
         <div class="baner_top"></div>
         <div class="baner_right"></div>
@@ -7,17 +13,17 @@
         <div class="baner_content">
             <div class="baner_fields">
                 <?php if( get_sub_field('baner_title') ): ?>
-                    <div class="baner_title" data-aos="fade-up" data-aos-once="true">
+                    <div class="baner_title" data-aos="fade-up" data-aos-once="true" data-aos-delay="300" data-aos-offset="0">
                         <?php the_sub_field('baner_title'); ?>
                     </div>
                 <?php endif; ?>
                 <?php if( get_sub_field('baner_text') ): ?>
-                    <div class="baner_text" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
+                    <div class="baner_text" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
                         <?php the_sub_field('baner_text'); ?>
                     </div>
                 <?php endif; ?>
                 <?php if( get_sub_field('baner_subtitle') ): ?>
-                    <div class="baner_subtitle" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
+                    <div class="baner_subtitle" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
                         <?php the_sub_field('baner_subtitle'); ?>
                         <div id="timer" class="timer col">
 
@@ -26,15 +32,15 @@
                 <?php endif; ?>
 
                 <?php if( get_sub_field('baner_button_link') && get_sub_field('baner_button_text') ): ?>
-                    <div class="baner_button" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-once="true">
+                    <div class="baner_button" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
                         <a href="<?php the_sub_field('baner_button_link'); ?>" rel="nofollow"><?php the_sub_field('baner_button_text'); ?></a>
                     </div>
                 <?php endif; ?>
             </div>
 
             <?php if( get_sub_field('second_button_link') && get_sub_field('second_button_text') ): ?>
-                <div class="second_button" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" data-aos-once="true">
-                    <a href="<?php the_sub_field('second_button_link'); ?>" rel="nofollow"><?php the_sub_field('second_button_text'); ?></a>
+                <div class="second_button" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
+                    <a id="myBtn" onclick="myFunction()" href="<?php the_sub_field('second_button_link'); ?>" rel="nofollow"><?php the_sub_field('second_button_text'); ?></a>
                 </div>
             <?php endif; ?>
         </div>

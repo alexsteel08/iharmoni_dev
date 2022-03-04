@@ -3,11 +3,11 @@
     <div class="simple_tabs_block content_width">
         <div class="simple_tabs_content">
             <?php if( get_sub_field('simple_tabs_image') ): ?>
-                <div class="simple_tabs_img" data-aos="fade-right" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
+                <div class="simple_tabs_img" data-aos="fade-right" data-aos-delay="100">
                     <img src="<?php the_sub_field('simple_tabs_image'); ?>" alt="img">
                 </div>
             <?php endif; ?>
-            <div class="simple_tab" data-aos="fade-left" data-aos-delay="200" data-aos-offset="0" data-aos-once="true">
+            <div class="simple_tab" data-aos="fade-left" data-aos-delay="200" data-aos-offset="0">
 
                 <div class="simple_tab_wrapper">
                     <div class="simple_tab_stars"></div>

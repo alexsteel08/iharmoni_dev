@@ -16,53 +16,53 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-@font-face {
-    font-family: 'Poster Gothic Round Cd ATF Md';
-    src: url('assets/fonts/PosterGothicRoundCondATF-Medium.eot');
-    src: url('assets/fonts/PosterGothicRoundCondATF-Medium.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundCondATF-Medium.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundCondATF-Medium.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundCondATF-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round Cd ATF Md';*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF-Medium.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF-Medium.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Medium.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Medium.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Medium.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round Cd ATF Hv';
-    src: url('assets/fonts/PosterGothicRoundCondATF-Heavy.eot');
-    src: url('assets/fonts/PosterGothicRoundCondATF-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundCondATF-Heavy.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundCondATF-Heavy.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundCondATF-Heavy.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round Cd ATF Hv';*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF-Heavy.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF-Heavy.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Heavy.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Heavy.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Heavy.ttf') format('truetype');*/
+/*    font-weight: 800;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round Cd ATF Lt';
-    src: url('assets/fonts/PosterGothicRoundCondATF-Light.eot');
-    src: url('assets/fonts/PosterGothicRoundCondATF-Light.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundCondATF-Light.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundCondATF-Light.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundCondATF-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round Cd ATF Lt';*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF-Light.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF-Light.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Light.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Light.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Light.ttf') format('truetype');*/
+/*    font-weight: 300;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round ExCd ATF Hv';
-    src: url('assets/fonts/PosterGothicRoundExCondATF-Heavy.eot');
-    src: url('assets/fonts/PosterGothicRoundExCondATF-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Heavy.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Heavy.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Heavy.ttf') format('truetype');
-    font-weight: 800;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ExCd ATF Hv';*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF-Heavy.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF-Heavy.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Heavy.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Heavy.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Heavy.ttf') format('truetype');*/
+/*    font-weight: 800;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
 @font-face {
     font-family: 'Poster Gothic ATF';
@@ -76,17 +76,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Poster Gothic ExCond ATF';
-    src: url('assets/fonts/PosterGothicExCondATF.eot');
-    src: url('assets/fonts/PosterGothicExCondATF.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicExCondATF.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicExCondATF.woff') format('woff'),
-    url('assets/fonts/PosterGothicExCondATF.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic ExCond ATF';*/
+/*    src: url('assets/fonts/PosterGothicExCondATF.eot');*/
+/*    src: url('assets/fonts/PosterGothicExCondATF.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicExCondATF.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicExCondATF.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicExCondATF.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
 @font-face {
     font-family: 'Poster Gothic ATF';
@@ -100,41 +100,41 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Poster Gothic Cond ATF';
-    src: url('assets/fonts/PosterGothicCondATF-Light.eot');
-    src: url('assets/fonts/PosterGothicCondATF-Light.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicCondATF-Light.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicCondATF-Light.woff') format('woff'),
-    url('assets/fonts/PosterGothicCondATF-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Cond ATF';*/
+/*    src: url('assets/fonts/PosterGothicCondATF-Light.eot');*/
+/*    src: url('assets/fonts/PosterGothicCondATF-Light.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Light.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Light.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Light.ttf') format('truetype');*/
+/*    font-weight: 300;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Cond ATF';
-    src: url('assets/fonts/PosterGothicCondATF-Medium.eot');
-    src: url('assets/fonts/PosterGothicCondATF-Medium.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicCondATF-Medium.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicCondATF-Medium.woff') format('woff'),
-    url('assets/fonts/PosterGothicCondATF-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Cond ATF';*/
+/*    src: url('assets/fonts/PosterGothicCondATF-Medium.eot');*/
+/*    src: url('assets/fonts/PosterGothicCondATF-Medium.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Medium.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Medium.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Medium.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic ExCond ATF';
-    src: url('assets/fonts/PosterGothicExCondATF-Light.eot');
-    src: url('assets/fonts/PosterGothicExCondATF-Light.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicExCondATF-Light.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicExCondATF-Light.woff') format('woff'),
-    url('assets/fonts/PosterGothicExCondATF-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic ExCond ATF';*/
+/*    src: url('assets/fonts/PosterGothicExCondATF-Light.eot');*/
+/*    src: url('assets/fonts/PosterGothicExCondATF-Light.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Light.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Light.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Light.ttf') format('truetype');*/
+/*    font-weight: 300;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
 @font-face {
     font-family: 'Poster Gothic ATF';
@@ -148,53 +148,53 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Poster Gothic Round ExCd ATF Md';
-    src: url('assets/fonts/PosterGothicRoundExCondATF-Medium.eot');
-    src: url('assets/fonts/PosterGothicRoundExCondATF-Medium.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Medium.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Medium.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ExCd ATF Md';*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF-Medium.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF-Medium.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Medium.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Medium.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Medium.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic ATF';
-    src: url('assets/fonts/PosterGothicATF-Heavy.eot');
-    src: url('assets/fonts/PosterGothicATF-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicATF-Heavy.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicATF-Heavy.woff') format('woff'),
-    url('assets/fonts/PosterGothicATF-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic ATF';*/
+/*    src: url('assets/fonts/PosterGothicATF-Heavy.eot');*/
+/*    src: url('assets/fonts/PosterGothicATF-Heavy.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicATF-Heavy.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicATF-Heavy.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicATF-Heavy.ttf') format('truetype');*/
+/*    font-weight: 900;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic ExCond ATF';
-    src: url('assets/fonts/PosterGothicExCondATF-Bold.eot');
-    src: url('assets/fonts/PosterGothicExCondATF-Bold.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicExCondATF-Bold.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicExCondATF-Bold.woff') format('woff'),
-    url('assets/fonts/PosterGothicExCondATF-Bold.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic ExCond ATF';*/
+/*    src: url('assets/fonts/PosterGothicExCondATF-Bold.eot');*/
+/*    src: url('assets/fonts/PosterGothicExCondATF-Bold.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Bold.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Bold.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Bold.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'PosterGothicExCondBlackATF';
-    src: url('assets/fonts/PosterGothicExCondATF-Heavy.eot');
-    src: url('assets/fonts/PosterGothicExCondATF-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicExCondATF-Heavy.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicExCondATF-Heavy.woff') format('woff'),
-    url('assets/fonts/PosterGothicExCondATF-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'PosterGothicExCondBlackATF';*/
+/*    src: url('assets/fonts/PosterGothicExCondATF-Heavy.eot');*/
+/*    src: url('assets/fonts/PosterGothicExCondATF-Heavy.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Heavy.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Heavy.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Heavy.ttf') format('truetype');*/
+/*    font-weight: 900;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
 @font-face {
     font-family: 'Poster Gothic ATF';
@@ -208,149 +208,149 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Poster Gothic Cond ATF';
-    src: url('assets/fonts/PosterGothicCondATF.eot');
-    src: url('assets/fonts/PosterGothicCondATF.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicCondATF.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicCondATF.woff') format('woff'),
-    url('assets/fonts/PosterGothicCondATF.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Cond ATF';*/
+/*    src: url('assets/fonts/PosterGothicCondATF.eot');*/
+/*    src: url('assets/fonts/PosterGothicCondATF.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicCondATF.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicCondATF.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicCondATF.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Cond ATF';
-    src: url('assets/fonts/PosterGothicCondATF-Heavy.eot');
-    src: url('assets/fonts/PosterGothicCondATF-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicCondATF-Heavy.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicCondATF-Heavy.woff') format('woff'),
-    url('assets/fonts/PosterGothicCondATF-Heavy.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Cond ATF';*/
+/*    src: url('assets/fonts/PosterGothicCondATF-Heavy.eot');*/
+/*    src: url('assets/fonts/PosterGothicCondATF-Heavy.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Heavy.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Heavy.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Heavy.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Cond ATF';
-    src: url('assets/fonts/PosterGothicCondATF-Bold.eot');
-    src: url('assets/fonts/PosterGothicCondATF-Bold.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicCondATF-Bold.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicCondATF-Bold.woff') format('woff'),
-    url('assets/fonts/PosterGothicCondATF-Bold.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Cond ATF';*/
+/*    src: url('assets/fonts/PosterGothicCondATF-Bold.eot');*/
+/*    src: url('assets/fonts/PosterGothicCondATF-Bold.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Bold.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Bold.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicCondATF-Bold.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round ExCd ATF Lt';
-    src: url('assets/fonts/PosterGothicRoundExCondATF-Light.eot');
-    src: url('assets/fonts/PosterGothicRoundExCondATF-Light.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Light.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Light.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Light.ttf') format('truetype');
-    font-weight: 300;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ExCd ATF Lt';*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF-Light.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF-Light.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Light.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Light.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Light.ttf') format('truetype');*/
+/*    font-weight: 300;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic ExCond ATF';
-    src: url('assets/fonts/PosterGothicExCondATF-Medium.eot');
-    src: url('assets/fonts/PosterGothicExCondATF-Medium.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicExCondATF-Medium.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicExCondATF-Medium.woff') format('woff'),
-    url('assets/fonts/PosterGothicExCondATF-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic ExCond ATF';*/
+/*    src: url('assets/fonts/PosterGothicExCondATF-Medium.eot');*/
+/*    src: url('assets/fonts/PosterGothicExCondATF-Medium.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Medium.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Medium.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicExCondATF-Medium.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round ExCond ATF';
-    src: url('assets/fonts/PosterGothicRoundExCondATF-Bold.eot');
-    src: url('assets/fonts/PosterGothicRoundExCondATF-Bold.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Bold.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Bold.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundExCondATF-Bold.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ExCond ATF';*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF-Bold.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF-Bold.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Bold.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Bold.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF-Bold.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round ATF';
-    src: url('assets/fonts/PosterGothicRoundATF-Heavy.eot');
-    src: url('assets/fonts/PosterGothicRoundATF-Heavy.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundATF-Heavy.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundATF-Heavy.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundATF-Heavy.ttf') format('truetype');
-    font-weight: 900;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ATF';*/
+/*    src: url('assets/fonts/PosterGothicRoundATF-Heavy.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundATF-Heavy.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Heavy.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Heavy.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Heavy.ttf') format('truetype');*/
+/*    font-weight: 900;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round Cond ATF';
-    src: url('assets/fonts/PosterGothicRoundCondATF-Bold.eot');
-    src: url('assets/fonts/PosterGothicRoundCondATF-Bold.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundCondATF-Bold.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundCondATF-Bold.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundCondATF-Bold.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round Cond ATF';*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF-Bold.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF-Bold.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Bold.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Bold.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF-Bold.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round ATF';
-    src: url('assets/fonts/PosterGothicRoundATF.eot');
-    src: url('assets/fonts/PosterGothicRoundATF.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundATF.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundATF.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundATF.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ATF';*/
+/*    src: url('assets/fonts/PosterGothicRoundATF.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundATF.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundATF.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundATF.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundATF.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round Cond ATF';
-    src: url('assets/fonts/PosterGothicRoundCondATF.eot');
-    src: url('assets/fonts/PosterGothicRoundCondATF.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundCondATF.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundCondATF.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundCondATF.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round Cond ATF';*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundCondATF.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundCondATF.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round ATF';
-    src: url('assets/fonts/PosterGothicRoundATF-Light.eot');
-    src: url('assets/fonts/PosterGothicRoundATF-Light.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundATF-Light.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundATF-Light.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundATF-Light.ttf') format('truetype');
-    font-weight: 100;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ATF';*/
+/*    src: url('assets/fonts/PosterGothicRoundATF-Light.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundATF-Light.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Light.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Light.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Light.ttf') format('truetype');*/
+/*    font-weight: 100;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
-@font-face {
-    font-family: 'Poster Gothic Round ATF';
-    src: url('assets/fonts/PosterGothicRoundATF-Medium.eot');
-    src: url('assets/fonts/PosterGothicRoundATF-Medium.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundATF-Medium.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundATF-Medium.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundATF-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ATF';*/
+/*    src: url('assets/fonts/PosterGothicRoundATF-Medium.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundATF-Medium.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Medium.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Medium.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundATF-Medium.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
 @font-face {
     font-family: 'Poster Gothic Round ATF';
@@ -364,17 +364,17 @@ Use it to make something cool, have fun, and share what you've learned with othe
     font-display: swap;
 }
 
-@font-face {
-    font-family: 'Poster Gothic Round ExCond ATF';
-    src: url('assets/fonts/PosterGothicRoundExCondATF.eot');
-    src: url('assets/fonts/PosterGothicRoundExCondATF.eot?#iefix') format('embedded-opentype'),
-    url('assets/fonts/PosterGothicRoundExCondATF.woff2') format('woff2'),
-    url('assets/fonts/PosterGothicRoundExCondATF.woff') format('woff'),
-    url('assets/fonts/PosterGothicRoundExCondATF.ttf') format('truetype');
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
-}
+/*@font-face {*/
+/*    font-family: 'Poster Gothic Round ExCond ATF';*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF.eot');*/
+/*    src: url('assets/fonts/PosterGothicRoundExCondATF.eot?#iefix') format('embedded-opentype'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF.woff2') format('woff2'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF.woff') format('woff'),*/
+/*    url('assets/fonts/PosterGothicRoundExCondATF.ttf') format('truetype');*/
+/*    font-weight: 500;*/
+/*    font-style: normal;*/
+/*    font-display: swap;*/
+/*}*/
 
 
 
@@ -697,6 +697,71 @@ template {
 @media only screen and (max-width: 1440px) {
 
 }
+.wpcf7 form.sent .wpcf7-response-output {
+    border-color: #008ff7 !important;
+    color: #fff !important;
+    font-size: 1.2rem !important;
+    text-align: center !important;
+    line-height: 120%;
+}
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+    border-color: #ffb900;
+    color: #fff;
+    text-align: center;
+    font-size: 1.2rem;
+    line-height: 120%;
+}
+
+.facetwp-counter {
+    display: none;
+}
+.facetwp-facet-categories {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.facetwp-facet.facetwp-facet-load_more.facetwp-type-pager {
+    margin-bottom: 0px !important;
+    display: flex;
+    justify-content: center;
+}
+.facetwp-facet-categories .facetwp-checkbox {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #1E3753;
+    display: flex;
+    align-items: center;
+    background-image: none;
+    padding: 0px 24px;
+    margin-bottom: 0px;
+}
+.facetwp-facet-categories .facetwp-checkbox:first-child {
+    padding-left: 0px;
+}
+.facetwp-load-more {
+    width: 275px;
+    height: 48px;
+    background: #008FF8;
+    box-shadow: 0px 20px 40px rgb(0 143 248 / 40%);
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFFFFF;
+    margin: 32px 10px 0;
+}
+.facetwp-checkbox.checked {
+    background-image: none !important;
+    color: #008FF8;
+}
+
 
 
 
@@ -788,7 +853,7 @@ template {
     z-index: 2;
     display: flex;
     flex-direction: column;
-    left: 80px;
+    left: 55px;
 }
 .about_img_first img {
     width: 305px;
@@ -863,9 +928,29 @@ template {
     margin: 16px 0px;
 }
 .page-template-page-about .cta {
-    padding-top: 250px;
+    padding-top: 350px;
+    padding-bottom: 240px;
 }
-
+@media only screen and (max-width: 1920px) {
+    .about_text {
+        max-width: 720px;
+    }
+}
+@media only screen and (max-width: 1750px) {
+    .about_text {
+        max-width: 650px;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    .about_text {
+        max-width: 570px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .about_text {
+        max-width: 450px;
+    }
+}
 @media only screen and (max-width: 1366px) {
     .about_img_first:nth-child(2) {
         left: 470px;
@@ -1088,8 +1173,8 @@ template {
     justify-content: flex-start;
     margin-right: -12px;
     margin-left: -12px;
-    padding-bottom: 100px;
-    padding-top: 100px;
+    /*padding-bottom: 50px;*/
+    /*padding-top: 50px;*/
     position: relative;
     z-index: 1;
 }
@@ -1480,4 +1565,32 @@ template {
     align-items: center;
     color: #1E3753;
     margin: 16px 0px 0;
+}
+
+
+
+
+.jet_cta {
+    position: relative;
+}
+.jet_cta:before {
+    position: absolute;
+    content: '';
+    top: 730px;
+    left: 0;
+    width: 100%;
+    height: 900px;
+    z-index: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-image: url(/wp-content/uploads/2022/03/jet1-min.png);
+}
+@media only screen and (max-width: 576px) {
+    .page-id-11 .jet_cta:before {
+        top: 1000px;
+        transform: scale(1.5);
+        left: -70px;
+    }
+
 }

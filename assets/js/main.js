@@ -424,6 +424,33 @@ AOS.init({
     }
 });
 
+var video = document.getElementById("myVideo");
+
+// Get the button
+var btn = document.getElementById("myBtn");
+
+// Pause and play the video, and change the button text
+function myFunction() {
+    if (video.paused) {
+        video.play();
+        btn.innerHTML = "Pause";
+    } else {
+        video.pause();
+        btn.innerHTML = "Play";
+    }
+}
+
+
+jQuery(document).ready(function($){
+    $(function () {
+        var video = document.getElementsByTagName("video")[0];
+        video.addEventListener('play', function (e) {
+            if (this.className.indexOf('MyClass') == -1)
+                this.className += " MyClass";
+        });
+    })();
+});
+
 
 
 // const scroller = new LocomotiveScroll({

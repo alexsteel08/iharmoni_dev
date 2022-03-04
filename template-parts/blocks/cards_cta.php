@@ -1,8 +1,9 @@
 <section class="cards_cta" <?php if( get_sub_field('cards_cta_bi') ): ?> style="background-image: url(<?php the_sub_field('cards_cta_bi'); ?>)"<?php endif; ?>>
+    <div class="jet_cta"></div>
     <?php if( get_sub_field('cta_red_image') ): ?>
         <div class="cards_cta_square">
             <div class="cards_cta_square_wrapper">
-                <div class="cards_cta_square_image" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0" data-aos-once="true">
+                <div class="cards_cta_square_image" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
                     <img src="<?php the_sub_field('cta_red_image'); ?>" alt="img">
                 </div>
             </div>
@@ -13,12 +14,12 @@
             <div class="cards_cta_wrapper">
                 <div class="cards_cta_top">
                     <?php if( get_sub_field('cards_cta_title') ): ?>
-                        <div class="cta_tabs_title" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0" data-aos-once="true">
+                        <div class="cta_tabs_title" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                             <?php the_sub_field('cards_cta_title'); ?>
                         </div>
                     <?php endif; ?>
                     <?php if( have_rows('cta_list') ): ?>
-                        <div class="cta_list" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0" data-aos-once="true" >
+                        <div class="cta_list" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
                             <?php while( have_rows('cta_list') ): the_row();  ?>
                                 <div class="cta_list_item">
                                     <div class="cta_list_title">
@@ -35,9 +36,9 @@
 
             </div>
 
-            <div class="cta_forms">
+            <div class="cta_forms" id="cta">
                 <?php if( get_sub_field('cta_forms_title') ): ?>
-                    <div class="cta_forms_title-block" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0" data-aos-once="true">
+                    <div class="cta_forms_title-block" data-aos="fade-up" data-aos-delay="400" data-aos-offset="0">
                         <div class="cta_forms_title">
                             <?php the_sub_field('cta_forms_title'); ?>
                         </div>
@@ -45,7 +46,7 @@
                 <?php endif; ?>
                 <div class="cta_forms_block">
                     <?php if( have_rows('cta_forms_items') ): ?>
-                        <div class="cta_forms_items" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0" data-aos-once="true">
+                        <div class="cta_forms_items" data-aos="fade-up" data-aos-delay="500" data-aos-offset="0">
                             <?php while( have_rows('cta_forms_items') ): the_row(); ?>
                                 <div class="cta_form_item">
                                     <div class="cta_form_wrapper">

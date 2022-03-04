@@ -19,11 +19,29 @@ get_header(); ?>
 
     <div id="primary">
         <div id="content" role="main">
+
+
+
+
+
+
+
             <div class="blog_page">
                 <div class="content_width">
                     <div class="blog_title" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
                         Blog
                     </div>
+
+                    <div class="">
+                        <?php echo do_shortcode('[facetwp facet="categories"]');?>
+
+                        <?php echo do_shortcode('[facetwp template="blog_posts"]');?>
+
+                        <?php echo do_shortcode('[facetwp facet="load_more"]');?>
+
+
+                    </div>
+
                     <div class="blog_category_list" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
                         <ul>
                             <li><a href="/blog/">All topics</a></li>

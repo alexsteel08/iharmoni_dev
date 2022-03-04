@@ -10,6 +10,9 @@
     height: 100%;
     position: relative;
     padding: 90px 0 90px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .baner_v3_top:before {
     position: absolute;
@@ -135,12 +138,7 @@
     margin-bottom: 42px;
     max-width: 690px;
 }
-.baner_v3_image {
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translate(0%, -50%);
-}
+
 @media only screen and (max-width: 1440px) {
     .baner_v3_fields {
         max-width: 600px;
@@ -183,6 +181,9 @@
         font-size: 32px;
         margin-top: 70px;
         margin-bottom: 32px;
+    }
+    .baner_v3_block {
+        justify-content: center;
     }
 }
 @media only screen and (min-width: 810px) and (orientation: portrait) {

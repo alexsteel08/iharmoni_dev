@@ -2,14 +2,14 @@
     <div class="cta_block content_width">
         <div class="cta_content">
             <div class="cta_tabs_wrapper" >
-                <div class="cta_tabs">
+                <div class="cta_tabs" >
                     <?php if( get_sub_field('tabs_acc_cta_title') ): ?>
-                       <div class="cta_tabs_title" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0" data-aos-once="true">
+                       <div class="cta_tabs_title" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
                           <?php the_sub_field('tabs_acc_cta_title'); ?>
                        </div>
                     <?php endif; ?>
                     <?php if( have_rows('cta_tabs') ): ?>
-                        <div class="container-tab" data-aos="fade-up" data-aos-delay="650" data-aos-offset="0" data-aos-once="true">
+                        <div class="container-tab" data-aos="fade-up" data-aos-delay="650" data-aos-offset="0">
                             <ul class="cta-tabs_v2">
                                 <?php while( have_rows('cta_tabs') ): the_row(); ?>
                                     <li class="tab-head-cont">
@@ -54,15 +54,15 @@
                 <?php endif; ?>
             </div>
 
-            <div class="cta_forms" >
+            <div class="cta_forms" id="cta" >
                 <?php if( get_sub_field('cta_forms_title') ): ?>
-                   <div class="cta_forms_title-block" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0" data-aos-once="true">
+                   <div class="cta_forms_title-block" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
                        <div class="cta_forms_title">
                            <?php the_sub_field('cta_forms_title'); ?>
                        </div>
                    </div>
                 <?php endif; ?>
-                <div class="cta_forms_block" data-aos="fade-up" data-aos-delay="800" data-aos-offset="0" data-aos-once="true">
+                <div class="cta_forms_block" data-aos="fade-up" data-aos-delay="800" data-aos-offset="0">
                     <?php if( have_rows('cta_forms_items') ): ?>
                         <div class="cta_forms_items">
                             <?php while( have_rows('cta_forms_items') ): the_row(); ?>

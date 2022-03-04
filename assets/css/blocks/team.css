@@ -41,7 +41,7 @@
 .team_image img {
     position: relative;
     max-width: 526px;
-    height: 100%;
+    height: auto;
 }
 .team_image:before {
     position: absolute;

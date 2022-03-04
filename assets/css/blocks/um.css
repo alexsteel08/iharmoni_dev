@@ -30,7 +30,9 @@
     color: #1E3753;
     margin: 24px 0px;
 }
-
+.um_image {
+    min-width: 600px;
+}
 .um_cards {
     display: flex;
     flex-wrap: wrap;

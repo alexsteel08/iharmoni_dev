@@ -19,6 +19,7 @@
 }
 .list_diagram_block {
     position: relative;
+    z-index: 1;
 }
 .list_diagram_row {
     display: flex;
