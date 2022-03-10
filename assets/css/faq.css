@@ -27,7 +27,8 @@
 .faq_sitebar {
     position: absolute;
     right: 0;
-    top: 180px  ;
+    top: 180px;
+    z-index: 2;
 }
 .faq_title {
     font-family: Poster Gothic Round ATF;
@@ -146,7 +147,7 @@
 .accordion__icon:before {
     position: absolute;
     content: '';
-    top: 0;
+    top: -11px;
     right: 0;
     background-repeat: no-repeat;
     background-size: cover;

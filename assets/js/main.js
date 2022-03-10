@@ -357,15 +357,6 @@ jQuery(function($){
 });
 
 
-jQuery(function($){
-    $(document).on('click', 'a[href^="#"]', function (event) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top + -130
-        }, 1500);
-    });
-
-});
 
 
 jQuery(document).ready(function($){
@@ -433,10 +424,10 @@ var btn = document.getElementById("myBtn");
 function myFunction() {
     if (video.paused) {
         video.play();
-        btn.innerHTML = "Pause";
+        btn.innerHTML = "Replay";
     } else {
         video.pause();
-        btn.innerHTML = "Play";
+        btn.innerHTML = "Replay";
     }
 }
 
@@ -448,9 +439,60 @@ jQuery(document).ready(function($){
             if (this.className.indexOf('MyClass') == -1)
                 this.className += " MyClass";
         });
-    })();
+        $('video').on('ended',function(){ $(this).hide(); });
+        $('video').on('ended',function(){
+            $('.baner_title').addClass('blue_text');
+            $('.baner_text').addClass('blue_text');
+            $('.baner_subtitle').addClass('blue_text');
+            $('.second_button').addClass('show_replay');
+        });
+        $('video').on('play',function(){
+            $('.baner_title').removeClass('blue_text');
+            $('.baner_text').removeClass('blue_text');
+            $('.baner_subtitle').removeClass('blue_text');
+            $('.second_button').removeClass('show_replay');
+        });
+        $('#myBtn').click(function(){
+            $('#myVideo').show();
+        });
+    });
 });
 
+
+jQuery(document).ready(function($){
+    $(function () {
+        var parallaxElements = $('.parallax'),
+            parallaxQuantity = parallaxElements.length;
+
+        $(window).on('scroll', function () {
+
+            window.requestAnimationFrame(function () {
+
+                for (var i = 0; i < parallaxQuantity; i++) {
+                    var currentElement =  parallaxElements.eq(i);
+                    var scrolled = $(window).scrollTop();
+
+                    currentElement.css({
+                        'transform': 'translate3d(0,' + scrolled * -0.3 + 'px, 0)'
+                    });
+
+                }
+            });
+
+        });
+    });
+});
+
+
+jQuery(function($){
+    $(document).on('click', 'a[href^="#"]', function (event) {
+        event.preventDefault();
+        $('html, body').animate({
+            scrollTop: $($.attr(this, 'href')).offset().top + -130
+        }, 1500);
+    });
+
+});
 
 
 // const scroller = new LocomotiveScroll({

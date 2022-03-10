@@ -3,9 +3,9 @@
         <div class="footer_rows">
             <div class="footer__column">
                 <div class="footer_column_content">
-                    <?php if( get_field('fc1_title','option') ): ?>
+                    <?php if( get_field('fc1_logo','option') ): ?>
                        <div class="footer_column_title">
-                          <?php the_field('fc1_title','option'); ?>
+                           <img src="<?php the_field('fc1_logo','option'); ?>" alt="footer logo">
                        </div>
                     <?php endif; ?>
                     <?php if( get_field('fc1_text','option') ): ?>

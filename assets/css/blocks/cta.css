@@ -184,6 +184,7 @@
     display: flex;
     margin-left: -12px;
     margin-right: -12px;
+    justify-content: center;
 }
 .cta_forms_block {
     position: relative;
@@ -193,11 +194,11 @@
     position: absolute;
     content: '';
     top: 50%;
-    left: 0;
-    transform: translate(0, -50%);
+    left: 50%;
+    transform: translate(-50%, -50%);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 100%;
+    width: 50%;
     height: 592px;
     background: #890600;
     filter: drop-shadow(0px 20px 40px rgba(30, 55, 83, 0.2));

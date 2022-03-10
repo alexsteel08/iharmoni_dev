@@ -137,13 +137,46 @@
     align-items: center;
     color: #1E3753;
     margin-bottom: 42px;
-    max-width: 690px;
+    max-width: 870px;
 }
 .baner_v2_image {
     position: absolute;
     right: 0;
     top: 50%;
     transform: translate(0%, -50%);
+}
+.baner_v2_image img {
+    z-index: 1;
+    position: relative;
+    margin-right: 70px;
+}
+.baner_v2_image:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translate(0%, -50%);
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1E3753;
+    width: 520px;
+    height: 520px;
+    z-index: 0;
+}
+@media only screen and (max-width: 1770px) {
+    .baner_v2_text {
+        max-width: 750px;
+    }
+}
+@media only screen and (max-width: 1550px) {
+    .baner_v2_text {
+        max-width: 650px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .baner_v2_text {
+        max-width: 600px;
+    }
 }
 @media only screen and (max-width: 1366px) {
     .baner_v2_text {
@@ -155,7 +188,11 @@
         width: 430px;
     }
     .baner_v2_text {
-        max-width: 470px;
+        max-width: 100%;
+    }
+    .baner_v2_image:before {
+        width: 100%;
+        height: 480px;
     }
 }
 @media only screen and (max-width: 992px) {
@@ -169,10 +206,23 @@
         right: 0;
         top: 50%;
         transform: translate(0%, 0);
+        width: 100%;
+        text-align: center;
+    }
+    .baner_v2_image img {
+        margin-right: 0px;
     }
     .baner_v2_text {
-        max-width: fit-content;
+        max-width: 100%;
     }
+    .baner_v2_image:before {
+        width: 100%;
+        height: 350px;
+    }
+    .baner_v2_content {
+        padding: 16px;
+    }
+
 }
 @media only screen and (max-width: 1080px) and (orientation: landscape) {
     .baner_v2_text {
@@ -192,9 +242,12 @@
     }
     .baner_v2_image {
         position: relative;
+        width: 100%;
+        text-align: center;
     }
     .baner_v2_image img {
-        width: 100%;
+        width: 640px;
+        margin-right: 0px;
     }
 }
 @media only screen and (max-width: 576px) {
@@ -225,5 +278,10 @@
         font-size: 32px;
         margin-top: 70px;
         margin-bottom: 32px;
+    }
+}
+@media only screen and (max-width: 375px) {
+    .baner_v2_image:before {
+        display: none;
     }
 }

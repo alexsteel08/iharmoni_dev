@@ -29,35 +29,27 @@ get_header(); ?>
             <div class="blog_page">
                 <div class="content_width">
                     <div class="blog_title" data-aos="fade-up" data-aos-delay="100" data-aos-offset="0">
-                        Blog
+                        Insights
                     </div>
 
-                    <div class="">
-                        <?php echo do_shortcode('[facetwp facet="categories"]');?>
-
-                        <?php echo do_shortcode('[facetwp template="blog_posts"]');?>
-
-                        <?php echo do_shortcode('[facetwp facet="load_more"]');?>
 
 
-                    </div>
-
-                    <div class="blog_category_list" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
-                        <ul>
-                            <li><a href="/blog/">All topics</a></li>
-                            <?php
-                            $categories = get_categories(array(
-                                'orderby' => 'name',
-                                'order' => 'ASC',
-                                'hide_empty'   => 0,
-                            ));
-                            foreach( $categories as $category ){
-                                echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></li> ';
-                            }
-                            ?>
-                        </ul>
-
-                    </div>
+<!--                    <div class="blog_category_list" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">-->
+<!--                        <ul>-->
+<!--                            <li><a href="/blog/">All topics</a></li>-->
+<!--                            --><?php
+//                            $categories = get_categories(array(
+//                                'orderby' => 'name',
+//                                'order' => 'ASC',
+//                                'hide_empty'   => 0,
+//                            ));
+//                            foreach( $categories as $category ){
+//                                echo '<li><a href="' . get_category_link( $category->term_id ) . '" title="' . sprintf( __( "View all posts in %s" ), $category->name ) . '" ' . '>' . $category->name.'</a></li> ';
+//                            }
+//                            ?>
+<!--                        </ul>-->
+<!---->
+<!--                    </div>-->
                     <?php
                     $featured_posts = get_field('top_post','option');
                     if( $featured_posts ): ?>
@@ -86,40 +78,14 @@ get_header(); ?>
                     <?php endif; ?>
 
 
-                    <div class="blog-post-list" data-aos="fade-up" data-aos-delay="300" data-aos-offset="0">
-                        <?php
-                        $new_loop = new WP_Query(array(
-                            'post_type' => 'post',
+                    <div class="blog_post_items">
+                        <?php echo do_shortcode('[facetwp facet="categories"]');?>
 
-                        ));
-                        ?>
-                        <?php if ($new_loop->have_posts()) : ?>
-                            <?php while ($new_loop->have_posts()) : $new_loop->the_post(); ?>
+                        <?php echo do_shortcode('[facetwp template="blog_posts"]');?>
 
-                                <?php get_template_part('template-parts/postitem');?>
+                        <?php echo do_shortcode('[facetwp facet="load_more"]');?>
 
 
-                            <?php endwhile; ?>
-                            <div class="loadmore-block">
-                                <?php
-                                global $wp_query;
-                                if ($wp_query->max_num_pages > 1) : ?>
-                                    <script>
-                                        var ajaxurl = '<?php echo site_url() ?>/wp-admin/admin-ajax.php';
-                                        var true_posts = '<?php echo serialize($wp_query->query_vars); ?>';
-                                        var current_page = <?php echo (get_query_var('paged')) ? get_query_var('paged') : 1; ?>;
-                                        var max_pages = '<?php echo $wp_query->max_num_pages; ?>';
-                                    </script>
-
-                                    <div id="true_loadmore">OLDER POSTS</div>
-                                <?php endif; ?>
-                            </div>
-
-
-                        <?php else: ?>
-                        <?php endif; ?>
-                        <?php wp_reset_query(); ?>
-                        <!-- Button -->
                     </div>
 
 

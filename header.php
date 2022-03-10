@@ -11,9 +11,14 @@
     <header id="site-header" class="header">
         <div class="header__container content_width">
             <div class="site_logo" >
-                <a itemprop="url" href="<?php echo get_home_url(); ?>" class="header-logo">
-                        <span>iHarmoni</span>
+                <?php if( get_field('site_logo','option') ): ?>
+                    <a itemprop="url" href="<?php echo get_home_url(); ?>" class="header-logo">
+                        <img src="<?php the_field('site_logo','option'); ?>" alt="">
                     </a>
+                <?php endif; ?>
+
+                    <img src="" alt="">
+
             </div>
             <div id="menu" class="header__menu menu">
                 <div class="menu__icon">

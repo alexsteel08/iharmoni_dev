@@ -1,6 +1,7 @@
 <section class="baner" <?php if( get_sub_field('baner_bi') ): ?> style="background-image: url(<?php the_sub_field('baner_bi'); ?>)"<?php endif; ?>>
-    <video autoplay muted id="myVideo">
-        <source src="<?php $file = get_sub_field('video_bg'); if( $file ): ?><?php echo $file['url']; ?><?php endif; ?>">
+    <video autoplay muted id="myVideo" poster="/wp-content/uploads/2022/03/loader-min.jpeg">
+        <source src="<?php $file = get_sub_field('video_bg'); if( $file ): ?><?php echo $file['url']; ?><?php endif; ?>" >
+
     </video>
 <!--    <div class="video_content">-->
 <!--        <button id="myBtn" onclick="myFunction()">Pause</button>-->
@@ -13,7 +14,7 @@
         <div class="baner_content">
             <div class="baner_fields">
                 <?php if( get_sub_field('baner_title') ): ?>
-                    <div class="baner_title" data-aos="fade-up" data-aos-once="true" data-aos-delay="300" data-aos-offset="0">
+                    <div id="baner_title" class="baner_title" data-aos="fade-up" data-aos-once="true" data-aos-delay="300" data-aos-offset="0">
                         <?php the_sub_field('baner_title'); ?>
                     </div>
                 <?php endif; ?>
@@ -45,6 +46,7 @@
             <?php endif; ?>
         </div>
     </div>
+    <div class="baner_jet parallax"></div>
 </section>
 <script>
     // Set the date we're counting down to
@@ -75,4 +77,9 @@
             document.getElementById("demo").innerHTML = "EXPIRED";
         }
     }, 1000);
+
+
+
+
+
 </script>

@@ -59,6 +59,9 @@ footer {
     color: #FFFFFF;
     margin: 16px 0px;
 }
+.footer_column_title img {
+    max-width: 110px;
+}
 .footer_column_text {
     font-family: Inter;
     font-style: normal;
