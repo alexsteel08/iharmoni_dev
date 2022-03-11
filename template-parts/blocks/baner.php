@@ -1,5 +1,6 @@
 <section class="baner" <?php if( get_sub_field('baner_bi') ): ?> style="background-image: url(<?php the_sub_field('baner_bi'); ?>)"<?php endif; ?>>
-    <video autoplay muted id="myVideo" poster="/wp-content/uploads/2022/03/loader-min.jpeg">
+
+    <video autoplay muted id="myVideo" <?php if( get_sub_field('baner_bi_poster') ): ?> poster="<?php the_sub_field('baner_bi_poster'); ?>"<?php endif; ?>>
         <source src="<?php $file = get_sub_field('video_bg'); if( $file ): ?><?php echo $file['url']; ?><?php endif; ?>" >
 
     </video>
@@ -34,7 +35,7 @@
 
                 <?php if( get_sub_field('baner_button_link') && get_sub_field('baner_button_text') ): ?>
                     <div class="baner_button" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
-                        <a href="<?php the_sub_field('baner_button_link'); ?>" rel="nofollow"><?php the_sub_field('baner_button_text'); ?></a>
+                        <a class="trigger" href="<?php the_sub_field('baner_button_link'); ?>" rel="nofollow"><?php the_sub_field('baner_button_text'); ?></a>
                     </div>
                 <?php endif; ?>
             </div>

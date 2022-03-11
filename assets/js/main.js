@@ -424,10 +424,10 @@ var btn = document.getElementById("myBtn");
 function myFunction() {
     if (video.paused) {
         video.play();
-        btn.innerHTML = "Replay";
+        btn.innerHTML = "Replay video";
     } else {
         video.pause();
-        btn.innerHTML = "Replay";
+        btn.innerHTML = "Replay video";
     }
 }
 
@@ -493,7 +493,17 @@ jQuery(function($){
     });
 
 });
+jQuery(document).ready(function($){
+    $( document ).ready(function() {
+        $('.trigger').click(function() {
+            $('.modal-wrapper').toggleClass('open');
+            $('.page-wrapper').toggleClass('blur');
+            // $('body').toggleClass('_lock');
+            return false;
+        });
+    });
 
+});
 
 // const scroller = new LocomotiveScroll({
 //     el: document.querySelector('[data-scroll-container]'),

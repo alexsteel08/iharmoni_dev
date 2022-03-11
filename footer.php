@@ -104,6 +104,20 @@
 
 
 </footer>
+<div class="modal-wrapper">
+    <div class="modal">
+        <div class="head">
+            <a class="btn-close trigger"></a>
+        </div>
+        <div class="content_modal contacts_page_form">
+            <div class="contacts_form_title"><?php the_field('title_modal','option'); ?></div>
+
+
+            <?php echo do_shortcode( ' '. the_field('shortcode_form_modal','option') .' ' ); ?>
+
+        </div>
+    </div>
+</div>
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <?php wp_footer(); ?>

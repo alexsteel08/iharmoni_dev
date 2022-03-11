@@ -49,7 +49,7 @@
                 ?>
                 <?php if( get_field('cta_button_text','option') && get_field('cta_button_link','option') ): ?>
                     <div class="cta_button_header" data-da="mega-menu,130,992">
-                        <a href="<?php the_field('cta_button_link','option'); ?>">
+                        <a class="trigger" href="<?php the_field('cta_button_link','option'); ?>">
                             <?php the_field('cta_button_text','option'); ?>
                         </a>
                     </div>

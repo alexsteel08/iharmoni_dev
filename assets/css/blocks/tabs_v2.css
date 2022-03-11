@@ -273,7 +273,51 @@
 
 
 /**/
-
+@media only screen and (max-width: 1920px) {
+    .tabs_v2_img:before {
+        width: 830px;
+    }
+    .image_big {
+        margin-right: 220px;
+    }
+    .image_small {
+        right: 300px;
+    }
+    .tabs_v2_img:after {
+        right: 0;
+        width: 600px;
+    }
+}
+@media only screen and (max-width: 1650px) {
+    .tabs_v2_img:before {
+        width: 710px;
+    }
+    .image_big {
+        margin-right: 150px;
+    }
+    .image_small {
+        right: 160px;
+    }
+    .tabs_v2_img:after {
+        right: 0;
+        width: 460px;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .tabs_v2_img:before {
+        width: 640px;
+    }
+    .image_big {
+        margin-right: 75px;
+    }
+    .image_small {
+        right: 95px;
+    }
+    .tabs_v2_img:after {
+        right: 0;
+        width: 400px;
+    }
+}
 @media only screen and (max-width: 1366px) {
     .image_big img {
         max-width: 550px;

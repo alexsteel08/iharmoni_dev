@@ -1,87 +1,95 @@
 <?php
 
 /*
-Template Name: FAQ
+Template Name: Contact page
 */
 
 
 get_header(); ?>
 
-<section class="faq">
-    <div class="faq_sitebar">
-        <?php if( have_rows('sitebar_navigation') ): ?>
-            <div class="sitebar_navigation">
-                <div class="sitebar_navigation_block">
-                    <?php while( have_rows('sitebar_navigation') ): the_row(); ?>
-                        <div class="">
-                            <div class="sitebar_navigation_title" data-aos="fade-left" data-aos-delay="100" data-aos-offset="0">
-                                <?php the_sub_field('sitebar_navigation_title'); ?>
-                            </div>
-                            <?php if( have_rows('sitebar_navigation_list') ): ?>
-                                <div class="sitebar_navigation_list" data-aos="fade-left" data-aos-delay="150" data-aos-offset="0">
-                                    <?php while( have_rows('sitebar_navigation_list') ): the_row(); ?>
-                                        <div class="sitebar_navigation_item">
-                                            <a href="#index<?php the_sub_field('id'); ?>"><?php the_sub_field('title'); ?></a>
-                                        </div>
-                                    <?php endwhile; ?>
-                                </div>
-                            <?php endif; ?>
+<section class="contacts">
+    <div class="contacts_block content_width">
+        <div class="contacts_page_title">
+            <h1><?php the_title();?></h1>
+        </div>
+        <div class="contacts_content">
+            <div class="contacts_info">
+                <?php if( have_rows('contacts_email') ): ?>
+                    <?php if( get_field('contacts_email_title') ): ?>
+                        <div class="contacts_box_title">
+                            <?php the_field('contacts_email_title'); ?>
                         </div>
-                    <?php endwhile; ?>
-                </div>
-            </div>
-        <?php endif; ?>
-    </div>
-    <div class="faq_block content_width">
-        <div class="faq_content">
-
-            <div class="faq_accordions">
-                <?php if( get_field('faq_title') ): ?>
-                   <div class="faq_title" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
-                      <?php the_field('faq_title'); ?>
-                   </div>
-                <?php endif; ?>
-                <?php if( have_rows('accordions') ): ?>
-                    <div class="container-tab">
-                        <div class="cta-tabs_v2" data-aos="fade-up" data-aos-delay="200" data-aos-offset="0">
-                            <?php while( have_rows('accordions') ): the_row(); ?>
-                                <div class="tab-head-cont" id="index<?php the_sub_field('accordions_title_id'); ?>">
-                                    <div class="faq_accordions_title">
-                                        <?php the_sub_field('accordions_title'); ?>
+                    <?php endif; ?>
+                    <div class="contacts_email">
+                        <?php while( have_rows('contacts_email') ): the_row();  ?>
+                            <div class="contact_email">
+                                <div class="contacts_email_box">
+                                    <div class="contacts_heading"><?php the_sub_field('heading'); ?></div>
+                                    <div class="contacts_email_address">
+                                        <a href="mailto:<?php the_sub_field('email'); ?>"><?php the_sub_field('email'); ?></a>
                                     </div>
-
-                                    <section>
-                                        <?php if( have_rows('accordion') ): ?>
-                                            <div class="accordion">
-                                                <?php while( have_rows('accordion') ): the_row(); ?>
-                                                    <div class="accordion__item" data-aos="fade-up" data-aos-delay="250" data-aos-offset="0">
-                                                        <button class="accordion__btn">
-
-                                                            <span class="accordion__caption"></i><?php the_sub_field('label'); ?></span>
-                                                            <span class="accordion__icon"></span>
-                                                        </button>
-
-                                                        <div class="accordion__content">
-                                                            <?php the_sub_field('text'); ?>
-                                                        </div>
-                                                    </div>
-                                                <?php endwhile; ?>
-                                            </div>
-                                        <?php endif; ?>
-                                    </section>
                                 </div>
-                            <?php endwhile; ?>
+                            </div>
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
+
+
+                <?php if( have_rows('contacts_phone') ): ?>
+                    <?php if( get_field('contacts_phone_title') ): ?>
+                        <div class="contacts_box_title">
+                            <?php the_field('contacts_phone_title'); ?>
                         </div>
+                    <?php endif; ?>
+                    <div class="contacts_email">
+                        <?php while( have_rows('contacts_phone') ): the_row();  ?>
+                            <div class="contact_phone">
+                                <div class="contact_phone_box">
+                                    <div class="contacts_heading"><?php the_sub_field('heading'); ?></div>
+                                    <div class="contact_phone_number">
+                                        <?php if( get_sub_field('phone') ): $phone1=get_sub_field('phone'); ?>
+                                            <a href="tel:<?php  if($phone1) {echo preg_replace('/[^0-9]/', '', $phone1);}?>"><?php echo $phone1;?></a>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="contact_work_time"><?php the_sub_field('work_time'); ?></div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
+                    </div>
+                <?php endif; ?>
+
+
+                <?php if( have_rows('contacts_address') ): ?>
+                    <?php if( get_field('contacts_address_title') ): ?>
+                        <div class="contacts_box_title">
+                            <?php the_field('contacts_address_title'); ?>
+                        </div>
+                    <?php endif; ?>
+                    <div class="contacts_email">
+                        <?php while( have_rows('contacts_address') ): the_row();  ?>
+                            <div class="contact_address">
+                                <div class="contacts_address_box">
+                                    <div class="contacts_heading"><?php the_sub_field('heading'); ?></div>
+                                    <div class="contacts_address_address">
+                                        <?php the_sub_field('address'); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
             </div>
 
 
 
+            <?php if( get_field('contacts_page_form') && get_field('contact_form_title') ): ?>
+               <div class="contacts_page_form">
+                   <div class="contacts_form_title"><?php the_field('contact_form_title'); ?></div>
+                  <?php the_field('contacts_page_form'); ?>
+               </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>
-<?php get_template_part( 'template-parts/subscribe' );?>
-
 
 <?php get_footer(); ?>
