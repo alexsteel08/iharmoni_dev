@@ -110,7 +110,9 @@ body.admin-bar .navbar-fixed-top {
 .cta_button_header {
     margin-left: 40px;
 }
-
+.cta_button_header:last-child{
+    margin-left: 20px;
+}
 .cta_button_header a {
     display: flex;
     flex-direction: row;
@@ -150,7 +152,11 @@ body.admin-bar .navbar-fixed-top {
     background: transparent;
 }
 
-
+@media only screen and (max-width: 1120px) {
+    .menu__link {
+        margin: 0px 10px;
+    }
+}
 @media only screen and (min-width: 769px) {
     .mega-menu-item:first-child .menu__link {
         margin: 0px 20px 0 0px;
@@ -170,7 +176,7 @@ body.admin-bar .navbar-fixed-top {
         left: 0;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 78%;
+        width: 71%;
         height: 1px;
         background-color: #FF0A00;
     }

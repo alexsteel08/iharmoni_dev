@@ -47,9 +47,17 @@
                 ] );
 
                 ?>
+
+                <?php if( get_field('login_text','option') && get_field('login_link','option') ): ?>
+                    <div class="cta_button_header" data-da="mega-menu,129,992">
+                        <a href="<?php the_field('login_link','option'); ?>">
+                            <?php the_field('login_text','option'); ?>
+                        </a>
+                    </div>
+                <?php endif; ?>
                 <?php if( get_field('cta_button_text','option') && get_field('cta_button_link','option') ): ?>
                     <div class="cta_button_header" data-da="mega-menu,130,992">
-                        <a class="trigger" href="<?php the_field('cta_button_link','option'); ?>">
+                        <a href="<?php the_field('cta_button_link','option'); ?>">
                             <?php the_field('cta_button_text','option'); ?>
                         </a>
                     </div>

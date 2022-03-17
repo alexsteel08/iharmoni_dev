@@ -38,6 +38,11 @@
                         <a class="trigger" href="<?php the_sub_field('baner_button_link'); ?>" rel="nofollow"><?php the_sub_field('baner_button_text'); ?></a>
                     </div>
                 <?php endif; ?>
+                <?php if( get_sub_field('link_after_button') && get_sub_field('text_after_button') ): ?>
+                    <div class="text_after_button" data-aos="fade-up" data-aos-delay="600" data-aos-offset="0">
+                        <a href="<?php the_sub_field('link_after_button'); ?>" rel="nofollow"><?php the_sub_field('text_after_button'); ?></a>
+                    </div>
+                <?php endif; ?>
             </div>
 
             <?php if( get_sub_field('second_button_link') && get_sub_field('second_button_text') ): ?>

@@ -135,7 +135,7 @@
 }
 .baner_fields {
     max-width: 930px;
-    padding-left: 5px;
+    padding-left: 20px;
     position: relative;
     z-index: 1;
 }
@@ -198,9 +198,13 @@
     color: #FFFFFF;
     width: auto;
     height: 60px;
+    transition: all 0.3s ease-in-out;
 
 }
-
+.baner_button a:hover {
+    background-color: #FF0A00;
+    transition: all 0.3s ease-in-out;
+}
 .second_button {
     position: absolute;
     bottom: 31px;
@@ -283,7 +287,50 @@
 .MyClass ~ .baner_title {
     color: #FFFFFF;
 }
+.second_button a {
+    /*background: rgba(30, 55, 83, 0.1);*/
+    /*border: 2px solid #FFFFFF;*/
+    box-sizing: border-box;
+    font-style: normal;
+    text-align: center;
+    color: #ff0801;
+    padding: 16px 42px;
+    z-index: -1;
+    opacity: 0;
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    position: relative;
+    padding-left: 40px;
+}
+.second_button a:before {
+    position: absolute;
+    content: '';
+    top: 50%;
+    transform: translate(0, -50%);
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 36px;
+    height: 36px;
+    background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='a' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 29 31'%3E%3Cdefs%3E%3Cstyle%3E.b%7Bfill:%23f41602;%7D%3C/style%3E%3C/defs%3E%3Cpolygon class='b' points='11 21.21 11 7.36 21.66 14.29 11 21.21'/%3E%3Cg%3E%3Cpath class='b' d='M14.5,28.31v-1.5c6.91,0,12.53-5.62,12.53-12.53S21.41,1.76,14.5,1.76,1.97,7.38,1.97,14.29H.47C.47,6.55,6.77,.26,14.5,.26s14.03,6.29,14.03,14.03-6.29,14.03-14.03,14.03Z'/%3E%3Cpolygon class='b' points='15.43 24.38 9.92 27.56 15.43 30.74 15.43 24.38'/%3E%3C/g%3E%3C/svg%3E");
+}
 
+.text_after_button {
+    font-family: 'Poster Gothic ATF';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #008FF8;
+    margin-top: 40px;
+}
 @media only screen and (max-width: 1440px) {
     .baner:after {
         right: 0;
