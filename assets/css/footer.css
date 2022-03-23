@@ -83,6 +83,11 @@ footer {
     align-items: center;
     color: #FFFFFF;
     margin: 16px 0px;
+    transition: all 0.4s ease-in-out;
+}
+.footer_links li a:hover {
+    color: #FF0A00;
+    transition: all 0.4s ease-in-out;
 }
 .footer_contacts li a {
     font-family: Roboto;
@@ -152,7 +157,16 @@ footer {
 :-ms-input-placeholder { /* Internet Explorer 10+ */
 
 }
-
+.footer_social_item a img {
+    width: 40px;
+    height: 40px;
+    transition: all 0.4s ease-in-out;
+}
+.footer_social_item a img:hover {
+    background: #ff0801;
+    border-radius: 50px;
+    transition: all 0.4s ease-in-out;
+}
 @media only screen and (max-width: 1440px) {
 
 }
