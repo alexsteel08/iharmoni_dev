@@ -107,6 +107,10 @@ body.admin-bar .navbar-fixed-top {
     margin: 0px 16px;
     transition: all 0.4s ease-in-out;
 }
+.menu__link:hover {
+    color: #FF0A00;
+    transition: all 0.4s ease-in-out;
+}
 .cta_button_header {
     margin-left: 20px;
 }
@@ -218,10 +222,7 @@ body.admin-bar .navbar-fixed-top {
         display: flex;
         align-items: center;
     }
-    #mega-menu-primary-menu {
-        position: relative;
-    }
-    #mega-menu-wrap-primary-menu .mega-menu:after {
+    .header__menu:after {
         position: absolute;
         content: '';
         bottom: 0;
