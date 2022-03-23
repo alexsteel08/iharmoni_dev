@@ -19,7 +19,7 @@ get_header(); ?>
                 <div class="list_block_wrapper">
                     <?php if( have_rows('list_block') ): ?>
                         <div class="list_block">
-                            <?php while( have_rows('list_block') ): the_row();  ?>
+                            <?php while( have_rows('list_block') ): the_row(); $selected = get_sub_field('modal'); ?>
                                 <div class="list_block_item">
                                     <div class="list_block_content">
                                         <div class="list_block_title">
@@ -29,7 +29,7 @@ get_header(); ?>
                                             <?php the_sub_field('text'); ?>
                                         </div>
                                         <div class="list_block_btn">
-                                            <a target="_blank" href="<?php the_sub_field('button_link'); ?> "><?php the_sub_field('button_text'); ?> </a>
+                                            <a <?php if( in_array('modal', $selected) ) { echo 'class="trigger"'; } ?> href="<?php the_sub_field('button_link'); ?> "><?php the_sub_field('button_text'); ?> </a>
                                         </div>
                                     </div>
 

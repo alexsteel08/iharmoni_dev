@@ -1,0 +1,91 @@
+.accordion {
+    padding: 1.2rem 0;
+    border-radius: 1rem;
+}
+
+.accordion__heading {
+    margin-bottom: 1rem;
+    padding: 0 1.4rem;
+}
+.accordion__caption {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 150%;
+    color: #008FF8;
+    max-width: 468px;
+}
+.accordion__btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1.2rem 0;
+    border: none;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.1s;
+    background: transparent;
+}
+.accordion__btn:hover {
+
+}
+
+.accordion__item--active .accordion__btn {
+
+}
+
+.fa-lightbulb {
+    padding-right: 1rem;
+}
+.accordion__icon {
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+    opacity: 0.9;
+}
+
+
+.accordion__content {
+    font-weight: 300;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateX(16px);
+    transition: max-height 0.5s ease, opacity 0.5s, transform 0.5s;
+}
+.accordion__content p {
+    padding: 1rem 1.8rem;
+}
+
+.accordion__item--active .accordion__content {
+    opacity: 1;
+    transform: translateX(0px);
+    max-height: 100vh;
+}
+.accordion__icon {
+    position: relative;
+}
+.accordion__icon:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 3V11H3V13H11V21H13V13H21V11H13V3H11Z' fill='white'/%3E%3C/svg%3E ");
+    width: 24px;
+    height: 24px;
+}
+.accordion__item--active .accordion__icon:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='25' viewBox='0 0 24 25' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M11 11.5H3V13.5H11H13H21V11.5H13H11Z' fill='%23FF0A00'/%3E%3C/svg%3E%0A");    width: 24px;
+    height: 24px;
+}

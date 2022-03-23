@@ -1,0 +1,77 @@
+.baner {
+    padding: 250px 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.baner_block {
+    height: 100%;
+    position: relative;
+}
+.baner_content {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.baner_fields {
+    max-width: 930px;
+}
+.baner_title {
+    font-family: Poster Gothic Round ATF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 110%;
+    text-transform: uppercase;
+    color: #1E3753;
+    margin-bottom: 40px;
+}
+.baner_text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #1E3753;
+    margin-bottom: 42px;
+    max-width: 560px;
+}
+.baner_subtitle {
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 130%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #1E3753;
+    margin-bottom: 50px;
+}
+.baner_subtitle span {
+    color: #FF0A00;
+}
+.baner_button a {
+    padding: 16px 32px;
+    background: #1E3753;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 40%);
+    font-family: Poster Gothic ATF;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 140%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    color: #FFFFFF;
+    width: auto;
+    height: 60px;
+}
+
+.second_button {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

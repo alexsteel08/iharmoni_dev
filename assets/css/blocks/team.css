@@ -37,20 +37,21 @@
 }
 .team_image {
     position: relative;
+    flex: 0 0 50%;
 }
 .team_image img {
     position: relative;
-    max-width: 526px;
+    width: 100%;
     height: auto;
 }
 .team_image:before {
     position: absolute;
     content: '';
     top: 75px;
-    right: -53px;
+    right: -50px;
     background-repeat: no-repeat;
     background-size: cover;
-    width: 500px;
+    width: 540px;
     height: 325px;
     background-color: #890600;
 }
@@ -81,7 +82,11 @@
     color: #2C2D2E;
     margin: 8px 0px;
 }
-
+@media only screen and (max-width: 1024px) {
+    .team_text {
+        padding-top: 100px;
+    }
+}
 @media only screen and (min-width: 810px) and (orientation: portrait) {
     .team_text {
         margin: 60px 0px 0;
@@ -118,5 +123,8 @@
     }
     .page-id-13 .team_image:before {
         top: 10px;
+    }
+    .team_text {
+        padding-top: 70px;
     }
 }

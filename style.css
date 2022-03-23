@@ -788,7 +788,7 @@ template {
     display: flex;
     justify-content: space-between;
     position: relative;
-    margin-bottom: 130px;
+    margin-bottom: 50px;
 }
 .about_title {
     font-family: Poster Gothic Round ATF;
@@ -801,7 +801,7 @@ template {
     margin: 48px 0px;
 }
 .about_text {
-    max-width: 584px;
+    max-width: 74%;
 }
 .text_block_item {
     margin-bottom: 40px;
@@ -927,9 +927,64 @@ template {
     color: #1E3753;
     margin: 16px 0px;
 }
-.page-template-page-about .cta {
-    padding-top: 350px;
+/*.page-template-page-about .cta {*/
+/*    padding-top: 350px;*/
+/*}*/
+
+
+/*video*/
+.video {
+    position: relative;
+    background: #000000;
+    border-radius: 60px 60px 0px 0px;
+    margin-top: -60px;
+    z-index: 6;
+    padding-top: 65px;
+    padding-bottom: 200px;
 }
+.video_title {
+    font-family: Freigeist;
+    font-style: normal;
+    font-weight: 550;
+    font-size: 54px;
+    line-height: 65px;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 48px 0;
+}
+.video_wrapper{
+    display:table;
+    position:relative;
+    width:100%;
+    max-width: 650px;
+    margin-bottom: 100px;
+}
+.video_item {
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+}
+.playpause {
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='50' cy='50' r='50' fill='white' fill-opacity='0.2'/%3E%3Cpath d='M63.4855 51.3698L46.4138 63.1898C46.1637 63.3629 45.8709 63.4642 45.5673 63.4828C45.2636 63.5013 44.9607 63.4365 44.6913 63.2952C44.4219 63.1539 44.1963 62.9415 44.039 62.6811C43.8817 62.4208 43.7986 62.1223 43.7988 61.8181V38.1814C43.7986 37.8772 43.8817 37.5788 44.039 37.3184C44.1963 37.058 44.4219 36.8457 44.6913 36.7044C44.9607 36.5631 45.2636 36.4982 45.5673 36.5168C45.8709 36.5354 46.1637 36.6367 46.4138 36.8098L63.4855 48.6298C63.7069 48.7832 63.8878 48.9879 64.0128 49.2265C64.1377 49.4651 64.203 49.7304 64.203 49.9998C64.203 50.2691 64.1377 50.5344 64.0128 50.773C63.8878 51.0116 63.7069 51.2164 63.4855 51.3698Z' fill='white'/%3E%3C/svg%3E%0A");
+    background-repeat:no-repeat;
+    position:absolute;
+    left:0%;
+    right:0%;
+    top:0%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+    width: 100px;
+    height: 100px;
+}
+@media only screen and (max-width: 576px) {
+    .video_title {
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+
 @media only screen and (max-width: 1920px) {
     .about_text {
         max-width: 720px;
@@ -1729,8 +1784,13 @@ template {
     color: #FFFFFF;
     width: 100%;
     margin-top: 35px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
-
+.contacts_page_form .wpcf7-submit:hover {
+    background: #FF0A00;
+    transition: all 0.3s ease-in-out;
+}
 @media only screen and (max-width: 1080px) {
     .contacts_content {
         flex-direction: column;
@@ -1985,6 +2045,13 @@ template {
     display: flex;
     align-items: center;
     color: #008FF8;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.list_block_btn a:hover {
+    color: #FFFFFF;
+    background: #008FF8;
+    transition: all 0.3s ease-in-out;
 }
 .list_block_item {
     margin-bottom: 60px;

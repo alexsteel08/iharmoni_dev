@@ -73,7 +73,21 @@ get_header(); ?>
                         <?php endwhile; ?>
                     </div>
                 <?php endif; ?>
+
+                <div class="video_wrapper" data-aos="fade-up" data-aos-delay="200">
+                    <video controls disablepictureinpicture controlslist="nodownload noplaybackrate" class="video_item" >
+                        <?php
+                        $file = get_field('about_video');
+                        if( $file ): ?>
+                            <source src="<?php echo $file['url']; ?>" type="video/mp4" />
+                        <?php endif; ?>
+                    </video>
+<!--                    <div class="playpause"></div>-->
+                </div>
             </div>
+
+
+
 
         </div>
     </div>

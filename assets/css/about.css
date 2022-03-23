@@ -163,7 +163,6 @@
 .page-template-page-about .cta {
     padding-top: 250px;
 }
-
 @media only screen and (max-width: 1366px) {
     .about_img_first:nth-child(2) {
         left: 470px;

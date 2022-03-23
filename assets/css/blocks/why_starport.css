@@ -12,10 +12,10 @@
 .why_starport:before {
     position: absolute;
     content: '';
-    top: -40px;
+    top: -180px;
     left: 0;
     width: 100%;
-    height: 100px;
+    height: 300px;
     background-repeat: repeat;
     background-position: center;
     background-size: contain;

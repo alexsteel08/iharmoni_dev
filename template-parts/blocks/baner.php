@@ -46,7 +46,7 @@
             </div>
 
             <?php if( get_sub_field('second_button_link') && get_sub_field('second_button_text') ): ?>
-                <div class="second_button" data-aos="fade-up" data-aos-delay="700" data-aos-offset="0">
+                <div class="second_button">
                     <a id="myBtn" onclick="myFunction()" href="<?php the_sub_field('second_button_link'); ?>" rel="nofollow"><?php the_sub_field('second_button_text'); ?></a>
                 </div>
             <?php endif; ?>

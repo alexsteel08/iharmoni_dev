@@ -228,7 +228,10 @@
     line-height: 130%;
     letter-spacing: 0.05em;
     text-transform: uppercase;
+    transition: all .3 ease-in-out;
+    cursor: pointer;
 }
+
 .days-block {
     display: flex;
 }
@@ -295,7 +298,7 @@
     text-align: center;
     color: #ff0801;
     padding: 16px 42px;
-    z-index: -1;
+    z-index: 0;
     opacity: 0;
     font-family: Poster Gothic ATF;
     font-style: normal;
@@ -306,6 +309,8 @@
     text-transform: uppercase;
     position: relative;
     padding-left: 40px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
 .second_button a:before {
     position: absolute;
@@ -314,12 +319,22 @@
     transform: translate(0, -50%);
     left: 0;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     width: 36px;
     height: 36px;
+    transition: all 0.3s ease-in-out;
     background-image: url("data:image/svg+xml,%3C%3Fxml version='1.0' encoding='UTF-8'%3F%3E%3Csvg id='a' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 29 31'%3E%3Cdefs%3E%3Cstyle%3E.b%7Bfill:%23f41602;%7D%3C/style%3E%3C/defs%3E%3Cpolygon class='b' points='11 21.21 11 7.36 21.66 14.29 11 21.21'/%3E%3Cg%3E%3Cpath class='b' d='M14.5,28.31v-1.5c6.91,0,12.53-5.62,12.53-12.53S21.41,1.76,14.5,1.76,1.97,7.38,1.97,14.29H.47C.47,6.55,6.77,.26,14.5,.26s14.03,6.29,14.03,14.03-6.29,14.03-14.03,14.03Z'/%3E%3Cpolygon class='b' points='15.43 24.38 9.92 27.56 15.43 30.74 15.43 24.38'/%3E%3C/g%3E%3C/svg%3E");
 }
-
+.second_button a:hover {
+    color: #1E3753;
+    transition: all 0.3s ease-in-out;
+}
+.second_button a:hover:before {
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+    filter: brightness(0);
+}
 .text_after_button {
     font-family: 'Poster Gothic ATF';
     font-style: normal;

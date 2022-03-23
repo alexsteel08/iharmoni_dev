@@ -505,6 +505,16 @@ jQuery(document).ready(function($){
 
 });
 
+jQuery(document).ready(function($){
+    $('.video_item').parent().click(function () {
+        if($(this).children(".video_item").get(0).paused){$(this).children(".video_item").get(0).play();   $(this).children(".playpause").fadeOut();
+        }else{       $(this).children(".video_item").get(0).pause();
+            $(this).children(".playpause").fadeIn();
+        }
+    });
+});
+
+
 // const scroller = new LocomotiveScroll({
 //     el: document.querySelector('[data-scroll-container]'),
 //     smooth: true

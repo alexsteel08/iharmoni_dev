@@ -367,14 +367,18 @@
 .accordion__content p {
     padding: 1rem 1.8rem;
 }
-
+.accordion__item {
+    position: relative;
+}
 .accordion__item--active .accordion__content {
     opacity: 1;
     transform: translateX(0px);
     max-height: 100vh;
 }
 .accordion__icon {
-    position: relative;
+    position: absolute;
+    right: 0;
+    top: 25px;
 }
 .accordion__icon:before {
     position: absolute;
@@ -500,6 +504,7 @@
     color: #FF0A00 !important;
     opacity: 1 !important;
     background-color: transparent !important;
+
 }
 .cta_form_form .wpcf7-submit {
     padding: 12px 32px;
@@ -515,8 +520,13 @@
     color: #FFFFFF;
     width: 100%;
     margin-top: 35px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
-
+.cta_form_form .wpcf7-submit:hover {
+    background: #FF0A00;
+    transition: all 0.3s ease-in-out;
+}
 /* RESPONSIVE */
 @media screen and (min-width: 320px) {
     .cta-tabs_v2 {

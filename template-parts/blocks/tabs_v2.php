@@ -44,13 +44,14 @@
                             <img src="<?php the_sub_field('image_big'); ?>" alt="image big">
                         </div>
                     <?php endif; ?>
-                    <?php if( get_sub_field('image_small') ): ?>
-                        <div class="image_small">
-                            <img src="<?php the_sub_field('image_small'); ?>" alt="image small">
-                        </div>
-                    <?php endif; ?>
+
                 </div>
             </div>
+            <?php if( get_sub_field('image_small') ): ?>
+                <div class="image_small" data-da="tabs_v2_img,2,768">
+                    <img src="<?php the_sub_field('image_small'); ?>" alt="image small">
+                </div>
+            <?php endif; ?>
         </div>
     </div>
 </section>
