@@ -345,6 +345,11 @@
     align-items: center;
     color: #008FF8;
     margin-top: 40px;
+    transition: all 0.4s ease-in-out;
+}
+.text_after_button a:hover {
+    color: #1E3753;
+    transition: all 0.4s ease-in-out;
 }
 @media only screen and (max-width: 1440px) {
     .baner:after {
