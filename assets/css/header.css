@@ -249,12 +249,24 @@ body.admin-bar .navbar-fixed-top {
         background-color: #FF0A00;
     }
 }
+@media only screen and (max-width: 1150px) {
+    .header__menu:after {
+        width: 69%;
+    }
+}
 @media only screen and (max-width: 992px) {
     .header__menu:after {
         display: none;
     }
     .header__container {
         min-height: 66px;
+    }
+    .cta_button_header:last-child {
+        margin-left: 0px;
+        margin-top: 20px;
+    }
+    .mega-menu-item:first-child .menu__link {
+        margin: 0px 8px 0 10px;
     }
 }
 @media only screen and (max-width: 768px) {
@@ -269,7 +281,7 @@ body.admin-bar .navbar-fixed-top {
         background-size: cover;
     }
     #mega-menu-wrap-primary-menu #mega-menu-primary-menu > li.mega-menu-item {
-        padding: 20px 0;
+        padding: 20px 0 20px 10px;
     }
     .cta_button_header {
         text-align: center;

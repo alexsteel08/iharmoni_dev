@@ -112,7 +112,7 @@
     margin-right: 24px;
 }
 .list_diagram_parrent-title span {
-    font-family: Inter;
+    font-family: Poster Gothic ATF;
     font-style: normal;
     font-weight: bold;
     font-size: 16px;
@@ -131,7 +131,7 @@
 .list_section_item {
     font-family: Poster Gothic ATF;
     font-style: normal;
-    font-weight: normal;
+    font-weight: 300;
     font-size: 16px;
     line-height: 160%;
     color: #0A0A0A;
