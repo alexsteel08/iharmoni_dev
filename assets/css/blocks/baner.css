@@ -351,12 +351,34 @@
     color: #1E3753;
     transition: all 0.4s ease-in-out;
 }
+@media only screen and (max-width: 1550px) {
+    .baner_jet {
+        right: 1%;
+    }
+}
 @media only screen and (max-width: 1440px) {
     .baner:after {
         right: 0;
     }
     .baner_title {
         max-width: fit-content;
+    }
+    .baner_jet {
+        right: -1%;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .baner_jet {
+        right: -4%;
+    }
+}
+@media only screen and (max-width: 1280px) {
+    .baner_title {
+        font-size: 50px;
+    }
+    .baner_text {
+        font-size: 18px;
+        max-width: 500px;
     }
 }
 @media only screen and (max-width: 1200px) {
@@ -395,7 +417,7 @@
     .baner_block {
         height: 100%;
         position: relative;
-        padding: 85px 2rem;
+        padding: 20px 2rem 80px 2rem;
     }
 
 
@@ -452,5 +474,20 @@
     }
     .second_button {
         display: none;
+    }
+    .baner_fields {
+        padding-left: 0px;
+    }
+    .baner_button {
+        font-size: 15px;
+    }
+    .baner_button a {
+        font-size: 16px;
+        padding: 16px;
+    }
+    .baner_jet {
+        width: 400px;
+        height: 400px;
+        right: 0%;
     }
 }

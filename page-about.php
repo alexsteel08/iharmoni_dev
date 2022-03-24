@@ -75,7 +75,7 @@ get_header(); ?>
                 <?php endif; ?>
 
                 <div class="video_wrapper" data-aos="fade-up" data-aos-delay="200">
-                    <video controls disablepictureinpicture controlslist="nodownload noplaybackrate" class="video_item" >
+                    <video controls disablepictureinpicture controlslist="nodownload noplaybackrate">
                         <?php
                         $file = get_field('about_video');
                         if( $file ): ?>

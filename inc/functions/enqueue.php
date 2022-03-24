@@ -47,6 +47,7 @@ function acf_content() {
         the_row();
         if (get_row_layout() == 'baner' ) {
             wp_enqueue_style('baner', WTHEME_CSS_URI . 'blocks/baner.css', array(), false, 'all');
+            wp_enqueue_script('banerjs', WTHEME_JS_URI . 'baner.js', array('jquery'), '', true);
         }
         if (get_row_layout() == 'simple_tabs' ) {
             wp_enqueue_style('simple_tabs', WTHEME_CSS_URI . 'blocks/simple_tabs.css', array(), false, 'all');
