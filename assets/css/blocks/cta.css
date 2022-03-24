@@ -124,6 +124,7 @@
     position: relative;
     z-index: 2;
     filter: drop-shadow(0px 20px 40px rgba(30, 55, 83, 0.2));
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
 }
 .cta_square_image:before {
     position: absolute;

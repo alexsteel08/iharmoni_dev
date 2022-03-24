@@ -847,6 +847,7 @@ template {
     width: 647px;
     height: 374px;
     background: #890600;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
 }
 .about_img_first {
     position: absolute;
@@ -854,6 +855,7 @@ template {
     display: flex;
     flex-direction: column;
     left: 55px;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
 }
 .about_img_first img {
     width: 305px;
@@ -1995,6 +1997,7 @@ template {
     max-width: 526px;
     position: relative;
     z-index: 1;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
 }
 .careers_image {
     position: relative;
@@ -2010,6 +2013,7 @@ template {
     width: 498px;
     height: 325px;
     background: #890600;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
 }
 .list_block_title {
     font-family: 'Inter';

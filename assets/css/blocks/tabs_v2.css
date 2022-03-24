@@ -100,6 +100,7 @@
     height: 740px;
     background: #890600;
     z-index: 0;
+    box-shadow: 0px 20px 40px rgb(30 55 83 / 20%);
 }
 .tabs_v2:after {
     position: absolute;

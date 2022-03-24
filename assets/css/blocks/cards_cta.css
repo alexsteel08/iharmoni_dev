@@ -66,6 +66,18 @@
     color: #FFFFFF;
     margin: 0px 0px 32px 0;
     padding-left: 40px;
+    position: relative;
+}
+.cta_tabs_title:before {
+    position: absolute;
+    content: '';
+    top: 10px;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 116px;
+    height: 29px;
+    background-image: url("data:image/svg+xml,%3Csvg width='112' height='28' viewBox='0 0 112 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14 0L17.1432 9.67376H27.3148L19.0858 15.6525L22.229 25.3262L14 19.3475L5.77101 25.3262L8.9142 15.6525L0.685208 9.67376H10.8568L14 0Z' fill='%23FF0A00'/%3E%3Cpath d='M56 0L59.1432 9.67376H69.3148L61.0858 15.6525L64.229 25.3262L56 19.3475L47.771 25.3262L50.9142 15.6525L42.6852 9.67376H52.8568L56 0Z' fill='%23FF0A00'/%3E%3Cpath d='M98 0L101.143 9.67376H111.315L103.086 15.6525L106.229 25.3262L98 19.3475L89.771 25.3262L92.9142 15.6525L84.6852 9.67376H94.8568L98 0Z' fill='%23FF0A00'/%3E%3C/svg%3E%0A");
 }
 .cta_tabs_title span {
     font-weight: 300;
