@@ -229,8 +229,23 @@ body.admin-bar .navbar-fixed-top {
         left: 0;
         background-repeat: no-repeat;
         background-size: cover;
-        width: 71%;
+        width: 80%;
         height: 1px;
+        background-color: #FF0A00;
+    }
+    li.menu_login .menu__link {
+        position: relative;
+    }
+    li.menu_login .menu__link:before {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: -12px;
+        transform: translate(0, -50%);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 20px;
+        width: 1px;
         background-color: #FF0A00;
     }
     .mega-current_page_item a {
@@ -249,11 +264,7 @@ body.admin-bar .navbar-fixed-top {
         background-color: #FF0A00;
     }
 }
-@media only screen and (max-width: 1150px) {
-    .header__menu:after {
-        width: 69%;
-    }
-}
+
 @media only screen and (max-width: 992px) {
     .header__menu:after {
         display: none;

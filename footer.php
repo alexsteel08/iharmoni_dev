@@ -111,8 +111,7 @@
         </div>
         <div class="content_modal contacts_page_form">
             <div class="contacts_form_title"><?php the_field('title_modal','option'); ?></div>
-
-
+            <div class="contacts_form_text"><?php the_field('text_modal','option'); ?></div>
             <?php echo do_shortcode( ' '. the_field('shortcode_form_modal','option') .' ' ); ?>
 
         </div>

@@ -75,14 +75,36 @@ get_header(); ?>
                 <?php endif; ?>
 
                 <div class="video_wrapper" data-aos="fade-up" data-aos-delay="200">
-                    <video controls disablepictureinpicture controlslist="nodownload noplaybackrate">
-                        <?php
-                        $file = get_field('about_video');
-                        if( $file ): ?>
-                            <source src="<?php echo $file['url']; ?>" type="video/mp4" />
-                        <?php endif; ?>
-                    </video>
-<!--                    <div class="playpause"></div>-->
+
+                    <?php
+
+                    // Load value.
+                    $iframe = get_field('about_youtube_video');
+
+                    // Use preg_match to find iframe src.
+                    preg_match('/src="(.+?)"/', $iframe, $matches);
+                    $src = $matches[1];
+
+                    // Add extra parameters to src and replace HTML.
+                    $params = array(
+                        'controls'  => 1,
+                        'hd'        => 1,
+                        'autohide'  => 1,
+                        'enablejsapi'  => 1,
+                        'rel'  => 0,
+                        'frameborder'  => 0,
+                        'modestbranding'  => 0,
+                    );
+                    $new_src = add_query_arg($params, $src);
+                    $iframe = str_replace($src, $new_src, $iframe);
+
+                    // Add extra attributes to iframe HTML.
+                    $attributes = 'frameborder="0"';
+                    $iframe = str_replace('></iframe>', ' ' . $attributes . '></iframe>', $iframe);
+
+                    // Display customized HTML.
+                    echo $iframe;
+                    ?>
                 </div>
             </div>
 

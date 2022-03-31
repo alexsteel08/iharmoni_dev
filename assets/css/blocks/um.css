@@ -10,6 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
 }
 .um_title {
     font-family: Poster Gothic ATF;
@@ -29,9 +30,6 @@
     line-height: 160%;
     color: #1E3753;
     margin: 24px 0px;
-}
-.um_image {
-    min-width: 600px;
 }
 .um_cards {
     display: flex;
@@ -65,6 +63,11 @@
     line-height: 160%;
     color: #1E3753;
     margin: 16px 0px;
+}
+@media only screen and (min-width: 768px) {
+    .um_image {
+         min-width: 600px;
+    }
 }
 @media only screen and (min-width: 810px) and (orientation: portrait) {
     .cards_cta .cards_cta_square_image img {

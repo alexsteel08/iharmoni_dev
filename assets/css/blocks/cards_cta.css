@@ -15,7 +15,7 @@
     background-repeat: repeat;
     background-position: center;
     background-size: contain;
-    background-image: url("data:image/svg+xml,%3Csvg width='1440' height='1077' viewBox='0 0 1440 1077' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg filter='url(%23filter0_f_331_483)'%3E%3Crect width='2144' height='577' transform='matrix(1 0 0 -1 -352 827)' fill='url(%23paint0_linear_331_483)'/%3E%3C/g%3E%3Cdefs%3E%3Cfilter id='filter0_f_331_483' x='-602' y='0' width='2644' height='1077' filterUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3E%3CfeFlood flood-opacity='0' result='BackgroundImageFix'/%3E%3CfeBlend mode='normal' in='SourceGraphic' in2='BackgroundImageFix' result='shape'/%3E%3CfeGaussianBlur stdDeviation='125' result='effect1_foregroundBlur_331_483'/%3E%3C/filter%3E%3ClinearGradient id='paint0_linear_331_483' x1='1072' y1='0' x2='1072' y2='577' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23D5E1E7'/%3E%3Cstop offset='1' stop-color='%23DFE5E8'/%3E%3C/linearGradient%3E%3C/defs%3E%3C/svg%3E%0A");
+    background-image: url(/wp-content/themes/iharmoni/assets/images/blurline.png);
 }
 .cards_cta_block {
     max-width: 1272px;
@@ -323,6 +323,55 @@
     background: #FF0A00;
     transition: all 0.3s ease-in-out;
 }
+@media only screen and (max-width: 1920px) {
+    .cards_cta_square {
+        right: 10%;
+        z-index: 5;
+    }
+}
+@media only screen and (max-width: 1770px) {
+    .cards_cta_square {
+        right: 8%;
+    }
+}
+@media only screen and (max-width: 1670px) {
+    .cards_cta_square {
+        right: 6%;
+    }
+}
+@media only screen and (max-width: 1570px) {
+    .cards_cta_square {
+        right: 3%;
+    }
+}
+@media only screen and (max-width: 1470px) {
+    .cards_cta_square {
+        right: 3%;
+    }
+}
+@media only screen and (max-width: 1440px) {
+    .cards_cta_top {
+        max-width: 690px;
+    }
+}
+@media only screen and (max-width: 1366px) {
+    .cards_cta_square {
+        right: 1%;
+    }
+}
+@media only screen and (max-width: 1250px) {
+    .cards_cta_square {
+        right: 0%;
+    }
+    .cards_cta_square_image img {
+        max-width: 560px;
+    }
+}
+@media only screen and (max-width: 1130px) {
+    .cards_cta_square_image img {
+        max-width: 500px;
+    }
+}
 @media only screen and (max-width: 1080px) and (orientation: landscape) {
     .cards_cta_top {
         max-width: 574px;
@@ -345,6 +394,10 @@
     }
 }
 @media only screen and (max-width: 576px) {
+    .cards_cta_square {
+        position: relative;
+        top: 90px;
+    }
     .cta_forms_title {
         font-size: 32px;
     }
@@ -398,5 +451,10 @@
         top: -100px;
         height: 300px;
         background-position: center center;
+    }
+    .cta_tabs_title:before {
+        background-size: contain;
+        width: 70px;
+        height: 20px;
     }
 }
