@@ -395,6 +395,10 @@
         height: 800px;
     }
 
+    .baner_jet {
+        right: -15%;
+    }
+
 }
 @media only screen and (max-width: 576px) {
     .baner {

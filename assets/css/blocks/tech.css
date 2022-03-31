@@ -166,8 +166,20 @@
 @media only screen and (max-width: 1060px) {
     .tech_bottom:before {
         top: -150px;
-        width: 640px;
+        width: 100%;
         background-size: contain;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .tech_title {
+        padding-bottom: 32px;
+    }
+    .tech_text {
+        margin: 0px 0px 60px;
+    }
+    .tech_bottom_first,
+    .tech_text {
+        max-width: 100%;
     }
 }
 @media only screen and (min-width: 810px) and (orientation: portrait) {

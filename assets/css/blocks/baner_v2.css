@@ -197,6 +197,13 @@
         height: 480px;
     }
 }
+
+@media only screen and (max-width: 1080px) and (orientation: landscape) {
+    .baner_v2_text {
+        max-width: 520px;
+    }
+
+}
 @media only screen and (max-width: 992px) {
     .baner_v2 {
         flex-direction: column-reverse;
@@ -225,11 +232,6 @@
         padding: 16px;
     }
 
-}
-@media only screen and (max-width: 1080px) and (orientation: landscape) {
-    .baner_v2_text {
-        max-width: 520px;
-    }
 
 }
 @media only screen and (min-width: 810px) and (orientation: portrait) {

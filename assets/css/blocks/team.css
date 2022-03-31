@@ -85,8 +85,22 @@
     margin: 8px 0px;
 }
 @media only screen and (max-width: 1024px) {
+    .team_title {
+        padding-bottom: 32px;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .team_image:before {
+        width: 100%;
+        height: 90%;
+        right: -16px;
+    }
     .team_text {
-        padding-top: 100px;
+        margin: 70px 0px 0;
+        max-width: 100%;
+    }
+    .team_bottom_item {
+        max-width: 100%;
     }
 }
 @media only screen and (min-width: 810px) and (orientation: portrait) {
@@ -106,12 +120,6 @@
 
     .team_image img {
         position: relative;
-        max-width: 312px;
-    }
-    .team_image:before {
-        width: 95%;
-        height: 200px;
-        right: 0;
     }
     .team_top {
         padding-right: 0px;
@@ -119,9 +127,6 @@
     .team_text {
         margin: 50px 0px 0;
         max-width: 100%;
-    }
-    .team_image:before {
-        top: 40px;
     }
     .page-id-13 .team_image:before {
         top: 10px;

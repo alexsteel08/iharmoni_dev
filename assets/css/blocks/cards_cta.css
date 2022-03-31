@@ -382,6 +382,17 @@
         max-width: 550px;
     }
 }
+@media only screen and (max-width: 992px) {
+    .cards_cta:after {
+        width: 100%;
+    }
+    .cards_cta_square_image {
+        text-align: center;
+    }
+    .cards_cta_top {
+        max-width: 100%;
+    }
+}
 @media only screen and (min-width: 810px) and (orientation: portrait) {
 
     .cta_forms_title {
@@ -393,7 +404,7 @@
         flex: 0 0 100%;
     }
 }
-@media only screen and (max-width: 576px) {
+@media only screen and (max-width: 992px) {
     .cards_cta_square {
         position: relative;
         top: 90px;
@@ -453,8 +464,11 @@
         background-position: center center;
     }
     .cta_tabs_title:before {
+        display: none;
+    }
+    .cta_form_title:before,
+    .cta_form_title:after {
         background-size: contain;
         width: 70px;
-        height: 20px;
     }
 }

@@ -108,10 +108,34 @@
     .info_block_img img {
         max-width: 450px;
     }
+    .info_block {
+        position: relative;
+        padding: 70px 0 70px;
+    }
+
+    .info_block_content {
+        flex-direction: column;
+        padding: 0 1rem;
+        align-items: center;
+    }
+    .info_block_img {
+        margin-right: 0px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        z-index: 2;
+        margin-bottom: -28px;
+    }
+    .info_block_list {
+        max-width: initial;
+    }
+    .info_block_img img {
+        max-width: inherit;
+    }
 }
 @media only screen and (max-width: 768px) {
     .info_block_square {
-        top: 25%;
+        top: 27%;
         width: calc(100% - 0px);
         height: 414px;
     }

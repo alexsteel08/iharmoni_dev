@@ -95,6 +95,11 @@
 .ad_title_text {
     max-width: 650px;
 }
+@media only screen and (max-width: 992px) {
+    .ad_title_text {
+        max-width: 100%;
+    }
+}
 @media only screen and (max-width: 576px) {
     .ad {
         background-image: none !important;

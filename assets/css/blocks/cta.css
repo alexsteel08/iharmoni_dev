@@ -588,8 +588,7 @@
         padding: 50px;
     }
 }
-@media only screen and (min-width: 810px) and (orientation: portrait),
-@media only screen and (max-width: 768px)  {
+@media only screen and (max-width: 992px)   {
     .cta_tabs_wrapper {
         flex-direction: column-reverse;
     }
@@ -679,6 +678,8 @@
         }
         .cta_forms_items {
             overflow-x: auto;
+            margin-left: 0px;
+            margin-right: 0px;
         }
         .cta_forms_items::-webkit-scrollbar {
             width: 0;
@@ -741,6 +742,7 @@
     }
     .cta_form_wrapper {
         padding: 50px 20px 30px;
+        box-shadow: none;
     }
     .cta_forms_block {
         padding: 0;
@@ -764,7 +766,13 @@
     }
     .home .cta:after {
         top: 780px;
-        transform: scale(1.5);
+        transform: scale(1);
         left: -70px;
     }
+    .cta_square_wrapper {
+        margin-left: -16px;
+        margin-right: -16px;
+
+    }
+
 }
