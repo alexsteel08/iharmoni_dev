@@ -247,6 +247,7 @@
     .about_img_wrapper {
         width: 100%;
     }
+
 }
 @media only screen and (max-width: 576px) {
     .top_text {
@@ -286,4 +287,5 @@
         font-size: 16px;
         padding: 16px 0px 0;
     }
+
 }

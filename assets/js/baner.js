@@ -1,4 +1,16 @@
 jQuery(document).ready(function($){
+    $(document).ready(function(){
+        var width = screen.width,
+            height = screen.height;
+
+        if (screen.width <= 1195) {
+
+            $('#myVideo').remove();
+        }
+    });
+});
+
+jQuery(document).ready(function($){
     $(function () {
         var video = document.getElementsByTagName("video")[0];
         video.addEventListener('play', function (e) {
@@ -51,3 +63,6 @@ jQuery(document).ready(function($){
         }
     });
 });
+
+
+

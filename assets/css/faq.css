@@ -248,6 +248,7 @@
     .faq_title {
         font-size: 32px;
         margin-bottom: 50px;
+        padding: 0 1rem;
     }
     .faq_block {
         padding: 0px !important;

@@ -186,6 +186,7 @@
     margin-left: -12px;
     margin-right: -12px;
     justify-content: center;
+    flex-direction: column;
 }
 .cta_forms_block {
     position: relative;
@@ -199,7 +200,7 @@
     transform: translate(-50%, -50%);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 50%;
+    width: 620px;
     height: 592px;
     background: #890600;
     /*filter: drop-shadow(0px 20px 40px rgba(30, 55, 83, 0.2));*/
@@ -209,6 +210,8 @@
 .cta_form_item {
     padding: 0 12px;
     flex: 0 0 50%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .cta_form_wrapper {
@@ -627,9 +630,7 @@
         right: 50%;
         transform: translate(50%, -50%);
     }
-    .cta_forms_items {
-        flex-direction: column;
-    }
+
     .cta_form_item {
         margin-bottom: 30px;
     }
@@ -637,6 +638,7 @@
         height: 90%;
     }
 }
+
 @media only screen and (max-width: 768px) {
         .cta_tabs_wrapper {
             flex-direction: column-reverse;
@@ -690,7 +692,16 @@
         .cta_forms_block:before {
             height: 90%;
         }
+        .cta_forms_block:before {
+            width: 92%;
+        }
+
     }
+@media only screen and (max-width: 850px) {
+    .cta_forms_items {
+        flex-direction: column;
+    }
+}
 @media only screen and (max-width: 576px) {
     .cta_tabs_title {
         font-size: 22px;

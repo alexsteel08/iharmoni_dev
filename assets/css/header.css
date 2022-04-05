@@ -210,6 +210,12 @@ body.admin-bar .navbar-fixed-top {
         font-size: 13px;
     }
 }
+@media only screen and (max-width: 992px) {
+    #mega-menu-wrap-primary-menu .mega-menu-toggle.mega-menu-open + #mega-menu-primary-menu {
+        overflow: scroll;
+        height: 88vh;
+    }
+}
 @media only screen and (min-width: 769px) {
     .mega-menu-item:first-child .menu__link {
         margin: 0px 10px 0 0px;
